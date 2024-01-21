@@ -20,3 +20,5 @@ Design and development of the front-end application, implementing smooth navigat
 
 Design and development of backend systems including database configurations, building API’s, implementing security layer and exposing them to front end.<br>
 ***Features:*** Secure Data Handling, Budget Management, Category-wise and Monthly Expense Comparison business logic will be taken care.
+
+[Spend Tracker-Wiki](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/wiki/Spend-Tracker)
