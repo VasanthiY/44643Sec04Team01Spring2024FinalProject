@@ -20,4 +20,5 @@ Design and development of the front-end application, implementing smooth navigat
 
 Design and development of backend systems including database configurations, implementing security layer, machine learning algorithms for training model and exposing them to front end.<br>
 
-[Smart-Bill-Wiki](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/wiki/Smart-Bill)
+[Smart Bill Wiki](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/wiki/Smart-Bill) ||
+[Smart Bill Prototype](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/blob/main/44643Sec04Team01_Prototype.docx)
