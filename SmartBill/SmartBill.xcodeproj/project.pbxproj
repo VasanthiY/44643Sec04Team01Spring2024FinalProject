@@ -15,6 +15,7 @@
 		3A6ACDC42B84507A00DEAB4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6ACDC22B84507A00DEAB4C /* Main.storyboard */; };
 		3A6ACDC62B84508800DEAB4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A6ACDC52B84508800DEAB4C /* Assets.xcassets */; };
 		3A6ACDC92B84508800DEAB4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6ACDC72B84508800DEAB4C /* LaunchScreen.storyboard */; };
+		3C8BC73D2B887C420053BE23 /* BillGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8BC73C2B887C420053BE23 /* BillGen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3A6ACDC52B84508800DEAB4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A6ACDC82B84508800DEAB4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A6ACDCA2B84508800DEAB4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C8BC73C2B887C420053BE23 /* BillGen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillGen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +66,12 @@
 				3A6ACDBE2B84507A00DEAB4C /* SceneDelegate.swift */,
 				3A6ACDC02B84507A00DEAB4C /* ViewController.swift */,
 				3A6ACDC22B84507A00DEAB4C /* Main.storyboard */,
+        Ramya
+				3C8BC73C2B887C420053BE23 /* BillGen.swift */,
+
 				3A4BD7D92B86B71A0054A8BF /* SignUpViewController.swift */,
 				3A4BB9D72B859E3E00D948B6 /* Login.swift */,
+        development
 				3A6ACDC52B84508800DEAB4C /* Assets.xcassets */,
 				3A6ACDC72B84508800DEAB4C /* LaunchScreen.storyboard */,
 				3A6ACDCA2B84508800DEAB4C /* Info.plist */,
@@ -145,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A6ACDC12B84507A00DEAB4C /* ViewController.swift in Sources */,
+				3C8BC73D2B887C420053BE23 /* BillGen.swift in Sources */,
 				3A6ACDBD2B84507A00DEAB4C /* AppDelegate.swift in Sources */,
 				3A6ACDBF2B84507A00DEAB4C /* SceneDelegate.swift in Sources */,
 				3A4BB9D82B859E3E00D948B6 /* Login.swift in Sources */,
