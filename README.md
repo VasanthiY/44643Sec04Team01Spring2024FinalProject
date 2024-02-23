@@ -1,15 +1,16 @@
 # 44643Sec04Team01Spring2024FinalProject
 
-**Project Name: Smart Bill**
-<br>
-<br>
-**App Description:**<br>
+### Project Name: Smart Bill
+
+[Smart Bill Wiki](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/wiki/Smart-Bill) ||
+[Smart Bill Prototype](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/blob/main/44643Sec04Team01_Prototype.docx)
+
+### App Description:
 Our "Smart Bill" is a bill generator application intends to provide convenience to users by detecting the items a user wants to purchase and generate an order Receipt. We are planning to use Machine Learning algorithms to train the model for detecting the items scanned.
 Key Features: Item recognition, Receipt Storage, Product Beautification, Authentication, Interactive UI.
-<br>
-<br>
-**Roles and Responsibilities:**
-<br>
+
+### Roles and Responsibilities:
+
 *Krishna Vasanthi Yakkala - Frontend (UI design and Integration) - Team Leader*<br>
 *Kalpana Kanakamalla- Frontend (UI design and Integration)*<br>
 
@@ -18,12 +19,10 @@ Design and development of the front-end application, implementing smooth navigat
 *Jameer Babu Pinjari - Backend (DB/ API Integration)*<br>
 *Sai Ramya Gajula - Backend (DB/ API Integration)*<br>
 
-Design and development of backend systems including database configurations, implementing security layer, machine learning algorithms for training model and exposing them to front end.<br>
+Design and development of backend systems including database configurations, implementing security layer, machine learning algorithms for training model and exposing them to front end.
 
-[Smart Bill Wiki](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/wiki/Smart-Bill) ||
-[Smart Bill Prototype](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/blob/main/44643Sec04Team01_Prototype.docx)
+### Sprint Reports
 
-**Sprint Reports**
 | Sprint | Link|
 |--------|-----|
 | Sprint 01 | [Doc](https://nwmissouri.sharepoint.com/:x:/r/sites/IOS-Sec04_Team01/Shared%20Documents/General/Sprint01%20(Jan08-Jan19).xlsx?d=wf0fac9900d95479a8a7771e8ef21f3c2&csf=1&web=1&e=K655Mi) |
