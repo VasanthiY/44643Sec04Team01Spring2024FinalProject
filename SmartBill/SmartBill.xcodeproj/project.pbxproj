@@ -14,6 +14,7 @@
 		3A6ACDC62B84508800DEAB4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A6ACDC52B84508800DEAB4C /* Assets.xcassets */; };
 		3A6ACDC92B84508800DEAB4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6ACDC72B84508800DEAB4C /* LaunchScreen.storyboard */; };
 		9A7C46DD2B88538D0046D07D /* CartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C46DC2B88538D0046D07D /* CartVC.swift */; };
+		9A7C46DF2B89454F0046D07D /* BillStatementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C46DE2B89454F0046D07D /* BillStatementVC.swift */; };
 		9AE6A9DF2B859E7800379CEA /* UploadImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE6A9DE2B859E7800379CEA /* UploadImageVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		3A6ACDC82B84508800DEAB4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A6ACDCA2B84508800DEAB4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A7C46DC2B88538D0046D07D /* CartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
+		9A7C46DE2B89454F0046D07D /* BillStatementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillStatementVC.swift; sourceTree = "<group>"; };
 		9AE6A9DE2B859E7800379CEA /* UploadImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +66,7 @@
 				3A6ACDBE2B84507A00DEAB4C /* SceneDelegate.swift */,
 				3A6ACDC02B84507A00DEAB4C /* ViewController.swift */,
 				3A6ACDC22B84507A00DEAB4C /* Main.storyboard */,
+				9A7C46DE2B89454F0046D07D /* BillStatementVC.swift */,
 				9A7C46DC2B88538D0046D07D /* CartVC.swift */,
 				3A6ACDC52B84508800DEAB4C /* Assets.xcassets */,
 				3A6ACDC72B84508800DEAB4C /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 				3A6ACDBF2B84507A00DEAB4C /* SceneDelegate.swift in Sources */,
 				9A7C46DD2B88538D0046D07D /* CartVC.swift in Sources */,
 				9AE6A9DF2B859E7800379CEA /* UploadImageVC.swift in Sources */,
+				9A7C46DF2B89454F0046D07D /* BillStatementVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
