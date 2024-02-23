@@ -22,3 +22,10 @@ Design and development of backend systems including database configurations, imp
 
 [Smart Bill Wiki](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/wiki/Smart-Bill) ||
 [Smart Bill Prototype](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/blob/main/44643Sec04Team01_Prototype.docx)
+
+**Sprint Reports**
+| Sprint | Link|
+|--------|-----|
+| Sprint 01 | [Doc](https://nwmissouri.sharepoint.com/:x:/r/sites/IOS-Sec04_Team01/Shared%20Documents/General/Sprint01%20(Jan08-Jan19).xlsx?d=wf0fac9900d95479a8a7771e8ef21f3c2&csf=1&web=1&e=K655Mi) |
+| Sprint 02 | [Doc](https://nwmissouri.sharepoint.com/:x:/r/sites/IOS-Sec04_Team01/Shared%20Documents/General/Sprint02%20(Jan22-Feb02).xlsx?d=w337e9ec1e0e04b139dd827b78562098e&csf=1&web=1&e=ywKXAx) |
+| Sprint 03 | [Doc](https://nwmissouri.sharepoint.com/:x:/r/sites/IOS-Sec04_Team01/Shared%20Documents/General/Sprint03%20(Feb05-Feb23).xlsx?d=wd8dc479278a84be8bb9b20eb7023cedd&csf=1&web=1&e=dXDBBI) |
