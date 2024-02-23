@@ -4,7 +4,8 @@
 
 [Smart Bill Wiki](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/wiki/Smart-Bill) ||
 [Smart Bill Prototype](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/blob/main/44643Sec04Team01_Prototype.docx) ||
-[Smart Bill Sprint Reports](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/blob/main/README.md#sprint-reports)
+[Smart Bill Sprint Reports](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/blob/main/README.md#sprint-reports) ||
+[Smart Bill WBS](https://github.com/users/VasanthiY/projects/2/views/1)
 
 ### App Description:
 Our "Smart Bill" is a bill generator application intends to provide convenience to users by detecting the items a user wants to purchase and generate an order Receipt. We are planning to use Machine Learning algorithms to train the model for detecting the items scanned.
