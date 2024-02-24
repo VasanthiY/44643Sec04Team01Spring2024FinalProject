@@ -7,7 +7,10 @@
 [Smart Bill Sprint Reports](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/blob/main/README.md#sprint-reports) ||
 [Smart Bill WBS](https://github.com/users/VasanthiY/projects/2/views/1)
 
-#### Sprint: 
+#### Sprint Updates: 
+[Sprint 01](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/blob/main/README.md#sprint-01) ||
+[Sprint 02](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/blob/main/README.md#sprint-02) ||
+[Sprint 03](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/blob/main/README.md#sprint-03) 
 
 ### App Description:
 Our "Smart Bill" is a bill generator application intends to provide convenience to users by detecting the items a user wants to purchase and generate an order Receipt. We are planning to use Machine Learning algorithms to train the model for detecting the items scanned.
