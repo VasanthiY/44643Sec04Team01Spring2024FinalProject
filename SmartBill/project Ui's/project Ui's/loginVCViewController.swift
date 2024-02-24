@@ -9,6 +9,8 @@ import UIKit
 
 class loginVCViewController: UIViewController {
 
+    @IBOutlet weak var displayEmail: UITextField!
+    @IBOutlet weak var displayName: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 

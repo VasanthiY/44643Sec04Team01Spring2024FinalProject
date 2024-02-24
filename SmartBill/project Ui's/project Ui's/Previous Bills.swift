@@ -9,6 +9,7 @@ import UIKit
 
 class Previous_Bills: UIViewController {
 
+    @IBOutlet weak var backBTN: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
