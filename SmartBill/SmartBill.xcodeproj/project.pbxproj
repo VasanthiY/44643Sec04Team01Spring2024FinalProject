@@ -16,6 +16,7 @@
 		3A6ACDC62B84508800DEAB4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A6ACDC52B84508800DEAB4C /* Assets.xcassets */; };
 		3A6ACDC92B84508800DEAB4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6ACDC72B84508800DEAB4C /* LaunchScreen.storyboard */; };
 		3ABF314B2B89525000A9A7B8 /* BillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABF314A2B89525000A9A7B8 /* BillViewController.swift */; };
+		3ACEA2FE2B97F8AE00A3E865 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEA2FD2B97F8AE00A3E865 /* DesignableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3A6ACDC82B84508800DEAB4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A6ACDCA2B84508800DEAB4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3ABF314A2B89525000A9A7B8 /* BillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillViewController.swift; sourceTree = "<group>"; };
+		3ACEA2FD2B97F8AE00A3E865 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				3A6ACDBE2B84507A00DEAB4C /* SceneDelegate.swift */,
 				3A6ACDC02B84507A00DEAB4C /* ViewController.swift */,
 				3A6ACDC22B84507A00DEAB4C /* Main.storyboard */,
+				3ACEA2FD2B97F8AE00A3E865 /* DesignableView.swift */,
 				3ABF314A2B89525000A9A7B8 /* BillViewController.swift */,
 				3A4BD7D92B86B71A0054A8BF /* SignUpViewController.swift */,
 				3A4BB9D72B859E3E00D948B6 /* Login.swift */,
@@ -151,6 +154,7 @@
 				3A6ACDBD2B84507A00DEAB4C /* AppDelegate.swift in Sources */,
 				3A6ACDBF2B84507A00DEAB4C /* SceneDelegate.swift in Sources */,
 				3A4BB9D82B859E3E00D948B6 /* Login.swift in Sources */,
+				3ACEA2FE2B97F8AE00A3E865 /* DesignableView.swift in Sources */,
 				3A4BD7DA2B86B71A0054A8BF /* SignUpViewController.swift in Sources */,
 				3ABF314B2B89525000A9A7B8 /* BillViewController.swift in Sources */,
 			);
