@@ -7,11 +7,49 @@
 
 import UIKit
 import Foundation
+import Vision
+import CoreML
 
 class ImageBGController: UIViewController {
     
+    let modelURL = Bundle.main.url(forResource: "FlowerShop", withExtension: "mlmodelc") 
+   
     
+    let visionModel = try VNCoreMLModel(for: MLModel(contentsOf: modelURL!))
 
+    
+    func detectObjects(in image: UIImage) {
+            guard let ciImage = CIImage(image: image) else {
+                fatalError("Unable to create CIImage from UIImage.")
+            }
+
+            let request = VNCoreMLRequest(model: visionModel) { request, error in
+                guard let results = request.results as? [VNRecognizedObjectObservation] else {
+                    fatalError("Error in processing VNCoreMLRequest: \(error?.localizedDescription ?? "Unknown error")")
+                }
+
+                self.displayResults(results)
+            }
+
+            let handler = VNImageRequestHandler(ciImage: ciImage)
+            do {
+                try handler.perform([request])
+            } catch {
+                print("Error performing VNImageRequestHandler: \(error.localizedDescription)")
+            }
+        }
+    
+    func displayResults(_ results: [VNRecognizedObjectObservation]) {
+           var objectsList: [String] = []
+
+           for result in results {
+               guard let label = result.labels.first?.identifier else { continue }
+               objectsList.append(label)
+           }
+
+           // Now, 'objectsList' contains the names of all the objects detected in the image
+           print("Objects detected: \(objectsList)")
+       }
     
 
     override func viewDidLoad() {
