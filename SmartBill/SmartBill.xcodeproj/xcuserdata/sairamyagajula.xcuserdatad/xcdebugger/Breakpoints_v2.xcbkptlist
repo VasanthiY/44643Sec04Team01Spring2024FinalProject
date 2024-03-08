@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "3C1D1099-37EF-4A27-B308-4677455890A8"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SmartBill/BillGen.swift"
@@ -18,6 +18,98 @@
             endingLineNumber = "15"
             landmarkName = "BillGen"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "3C1D1099-37EF-4A27-B308-4677455890A8 - e17d047a7f8868ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SmartBill.BillGen.titleLBL.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "SmartBill"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sairamyagajula/Desktop/44643Sec04Team01Spring2024FinalProject/SmartBill/SmartBill/BillGen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "3C1D1099-37EF-4A27-B308-4677455890A8 - 6bc32ea317a28c97"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SmartBill.BillGen.titleLBL.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "SmartBill"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sairamyagajula/Desktop/44643Sec04Team01Spring2024FinalProject/SmartBill/SmartBill/BillGen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "3C1D1099-37EF-4A27-B308-4677455890A8 - 91741c30434e8595"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SmartBill.BillGen.titleLBL.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "SmartBill"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sairamyagajula/Desktop/44643Sec04Team01Spring2024FinalProject/SmartBill/SmartBill/BillGen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "3C1D1099-37EF-4A27-B308-4677455890A8 - 15ddab2f04063977"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SmartBill.BillGen.titleLBL.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SmartBill"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sairamyagajula/Desktop/44643Sec04Team01Spring2024FinalProject/SmartBill/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "3C1D1099-37EF-4A27-B308-4677455890A8 - 3881333cf2dcafcc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SmartBill.BillGen.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; SmartBill.BillGen"
+                  moduleName = "SmartBill"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sairamyagajula/Desktop/44643Sec04Team01Spring2024FinalProject/SmartBill/SmartBill/BillGen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "3C1D1099-37EF-4A27-B308-4677455890A8 - 2b856adcd1f93af5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SmartBill.BillGen.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SmartBill.BillGen&gt;"
+                  moduleName = "SmartBill"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sairamyagajula/Desktop/44643Sec04Team01Spring2024FinalProject/SmartBill/SmartBill/BillGen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

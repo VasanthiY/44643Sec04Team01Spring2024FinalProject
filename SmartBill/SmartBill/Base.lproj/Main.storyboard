@@ -33,13 +33,15 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="373" height="69.666666666666671"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Previous Bills"/>
+                                                <connections>
+                                                    <action selector="prevBillBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="skJ-rZ-mi7"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Xa-G8-xJ6">
                                                 <rect key="frame" x="0.0" y="77.666666666666629" width="373" height="70"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Generate Bill"/>
                                                 <connections>
-                                                    <action selector="BillBTN:" destination="O4u-d5-L1v" eventType="touchUpInside" id="1o9-hW-QPi"/>
                                                     <action selector="BillGenBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yrd-e6-4WC"/>
                                                 </connections>
                                             </button>
@@ -65,10 +67,11 @@
                     </view>
                     <connections>
                         <outlet property="BillBTN" destination="1Xa-G8-xJ6" id="39U-1j-NfF"/>
+                        <outlet property="prevBillBTN" destination="GqE-lA-T3C" id="5wc-7I-3Of"/>
+                        <outlet property="titleLBL" destination="xrR-5g-nob" id="IFz-Kf-FWF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <exit id="O4u-d5-L1v" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="53" y="4"/>
         </scene>

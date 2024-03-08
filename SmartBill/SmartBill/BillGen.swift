@@ -12,8 +12,10 @@ class BillGen: UIViewController {
     
     @IBOutlet weak var BillBTN: UIButton!
     
+    @IBOutlet weak var titleLBL: UILabel!
     
     
+    @IBOutlet weak var prevBillBTN: UIButton!
     
     
     
@@ -21,11 +23,18 @@ class BillGen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        BillBTN.isEnabled = true
+        prevBillBTN.isEnabled = true
+        
     }
     
    
+    @IBAction func prevBillBTN(_ sender: UIButton) {
+    }
+    
+    
     @IBAction func BillGenBTN(_ sender: UIButton) {
     }
     
