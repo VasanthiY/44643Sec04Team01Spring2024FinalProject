@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A4BB9D82B859E3E00D948B6 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BB9D72B859E3E00D948B6 /* Login.swift */; };
-		3A4BD7DA2B86B71A0054A8BF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BD7D92B86B71A0054A8BF /* SignUpViewController.swift */; };
+		3A4BD7DA2B86B71A0054A8BF /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BD7D92B86B71A0054A8BF /* CreateAccountVC.swift */; };
 		3A6ACDBD2B84507A00DEAB4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6ACDBC2B84507A00DEAB4C /* AppDelegate.swift */; };
 		3A6ACDBF2B84507A00DEAB4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6ACDBE2B84507A00DEAB4C /* SceneDelegate.swift */; };
 		3A6ACDC12B84507A00DEAB4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6ACDC02B84507A00DEAB4C /* ViewController.swift */; };
@@ -21,7 +21,7 @@
 
 /* Begin PBXFileReference section */
 		3A4BB9D72B859E3E00D948B6 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
-		3A4BD7D92B86B71A0054A8BF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3A4BD7D92B86B71A0054A8BF /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		3A6ACDB92B84507A00DEAB4C /* SmartBill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartBill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6ACDBC2B84507A00DEAB4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A6ACDBE2B84507A00DEAB4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 				3A6ACDC22B84507A00DEAB4C /* Main.storyboard */,
 				3ACEA2FD2B97F8AE00A3E865 /* DesignableView.swift */,
 				3ABF314A2B89525000A9A7B8 /* BillViewController.swift */,
-				3A4BD7D92B86B71A0054A8BF /* SignUpViewController.swift */,
+				3A4BD7D92B86B71A0054A8BF /* CreateAccountVC.swift */,
 				3A4BB9D72B859E3E00D948B6 /* Login.swift */,
 				3A6ACDC52B84508800DEAB4C /* Assets.xcassets */,
 				3A6ACDC72B84508800DEAB4C /* LaunchScreen.storyboard */,
@@ -155,7 +155,7 @@
 				3A6ACDBF2B84507A00DEAB4C /* SceneDelegate.swift in Sources */,
 				3A4BB9D82B859E3E00D948B6 /* Login.swift in Sources */,
 				3ACEA2FE2B97F8AE00A3E865 /* DesignableView.swift in Sources */,
-				3A4BD7DA2B86B71A0054A8BF /* SignUpViewController.swift in Sources */,
+				3A4BD7DA2B86B71A0054A8BF /* CreateAccountVC.swift in Sources */,
 				3ABF314B2B89525000A9A7B8 /* BillViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
