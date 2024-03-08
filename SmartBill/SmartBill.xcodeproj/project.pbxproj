@@ -13,6 +13,7 @@
 		3A6ACDC42B84507A00DEAB4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6ACDC22B84507A00DEAB4C /* Main.storyboard */; };
 		3A6ACDC62B84508800DEAB4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A6ACDC52B84508800DEAB4C /* Assets.xcassets */; };
 		3A6ACDC92B84508800DEAB4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6ACDC72B84508800DEAB4C /* LaunchScreen.storyboard */; };
+		3C7610C62B9AD9D000129F3B /* ProductDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7610C52B9AD9D000129F3B /* ProductDetails.swift */; };
 		3C8BC73D2B887C420053BE23 /* BillGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8BC73C2B887C420053BE23 /* BillGen.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		3A6ACDC52B84508800DEAB4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A6ACDC82B84508800DEAB4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A6ACDCA2B84508800DEAB4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C7610C52B9AD9D000129F3B /* ProductDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetails.swift; sourceTree = "<group>"; };
 		3C8BC73C2B887C420053BE23 /* BillGen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillGen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +64,7 @@
 				3A6ACDBE2B84507A00DEAB4C /* SceneDelegate.swift */,
 				3A6ACDC02B84507A00DEAB4C /* ViewController.swift */,
 				3A6ACDC22B84507A00DEAB4C /* Main.storyboard */,
+				3C7610C52B9AD9D000129F3B /* ProductDetails.swift */,
 				3C8BC73C2B887C420053BE23 /* BillGen.swift */,
 				3A6ACDC52B84508800DEAB4C /* Assets.xcassets */,
 				3A6ACDC72B84508800DEAB4C /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				3A6ACDC12B84507A00DEAB4C /* ViewController.swift in Sources */,
 				3C8BC73D2B887C420053BE23 /* BillGen.swift in Sources */,
+				3C7610C62B9AD9D000129F3B /* ProductDetails.swift in Sources */,
 				3A6ACDBD2B84507A00DEAB4C /* AppDelegate.swift in Sources */,
 				3A6ACDBF2B84507A00DEAB4C /* SceneDelegate.swift in Sources */,
 			);
