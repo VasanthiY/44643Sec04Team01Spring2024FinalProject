@@ -16,7 +16,7 @@
 		ACD2D8392B87F93800749AF3 /* project_Ui_sTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD2D8382B87F93800749AF3 /* project_Ui_sTests.swift */; };
 		ACD2D8432B87F93800749AF3 /* project_Ui_sUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD2D8422B87F93800749AF3 /* project_Ui_sUITests.swift */; };
 		ACD2D8452B87F93800749AF3 /* project_Ui_sUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD2D8442B87F93800749AF3 /* project_Ui_sUITestsLaunchTests.swift */; };
-		BB1676CC2B890E4B00A56063 /* loginVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1676CB2B890E4B00A56063 /* loginVCViewController.swift */; };
+		BB1676CC2B890E4B00A56063 /* logoutVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1676CB2B890E4B00A56063 /* logoutVCViewController.swift */; };
 		BB1676CE2B890EBA00A56063 /* Previous Bills.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1676CD2B890EBA00A56063 /* Previous Bills.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +51,7 @@
 		ACD2D83E2B87F93800749AF3 /* project Ui'sUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "project Ui'sUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD2D8422B87F93800749AF3 /* project_Ui_sUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project_Ui_sUITests.swift; sourceTree = "<group>"; };
 		ACD2D8442B87F93800749AF3 /* project_Ui_sUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project_Ui_sUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		BB1676CB2B890E4B00A56063 /* loginVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVCViewController.swift; sourceTree = "<group>"; };
+		BB1676CB2B890E4B00A56063 /* logoutVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logoutVCViewController.swift; sourceTree = "<group>"; };
 		BB1676CD2B890EBA00A56063 /* Previous Bills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Previous Bills.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,7 +108,7 @@
 				ACD2D8252B87F93700749AF3 /* ViewController.swift */,
 				ACD2D8272B87F93700749AF3 /* Main.storyboard */,
 				BB1676CD2B890EBA00A56063 /* Previous Bills.swift */,
-				BB1676CB2B890E4B00A56063 /* loginVCViewController.swift */,
+				BB1676CB2B890E4B00A56063 /* logoutVCViewController.swift */,
 				ACD2D82A2B87F93800749AF3 /* Assets.xcassets */,
 				ACD2D82C2B87F93800749AF3 /* LaunchScreen.storyboard */,
 				ACD2D82F2B87F93800749AF3 /* Info.plist */,
@@ -268,7 +268,7 @@
 				ACD2D8262B87F93700749AF3 /* ViewController.swift in Sources */,
 				ACD2D8222B87F93700749AF3 /* AppDelegate.swift in Sources */,
 				ACD2D8242B87F93700749AF3 /* SceneDelegate.swift in Sources */,
-				BB1676CC2B890E4B00A56063 /* loginVCViewController.swift in Sources */,
+				BB1676CC2B890E4B00A56063 /* logoutVCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
