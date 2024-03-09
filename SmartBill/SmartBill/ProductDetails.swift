@@ -26,6 +26,8 @@ class ProductDetails: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        addBTN.isEnabled = true
+        
     }
     
     @IBAction func addBTN(_ sender: UIButton) {
