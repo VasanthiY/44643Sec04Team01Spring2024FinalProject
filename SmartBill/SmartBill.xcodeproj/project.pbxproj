@@ -7,21 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A4BB9D82B859E3E00D948B6 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BB9D72B859E3E00D948B6 /* Login.swift */; };
-		3A4BD7DA2B86B71A0054A8BF /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BD7D92B86B71A0054A8BF /* CreateAccountVC.swift */; };
+		3A0868FE2BA3BFA000E1DB37 /* ButtonWithShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0868FD2BA3BFA000E1DB37 /* ButtonWithShadow.swift */; };
+		3A18491E2BA4BAD70009EE9A /* UploadImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18491D2BA4BAD70009EE9A /* UploadImageVC.swift */; };
+		3A1849202BA4BB3F0009EE9A /* CartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18491F2BA4BB3F0009EE9A /* CartVC.swift */; };
+		3A1849222BA4BBD20009EE9A /* BillStatementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1849212BA4BBD20009EE9A /* BillStatementVC.swift */; };
+		3A1849242BA4C4100009EE9A /* ImageBGController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1849232BA4C4100009EE9A /* ImageBGController.swift */; };
+		3A1849262BA4C56E0009EE9A /* Previous_Bills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1849252BA4C56E0009EE9A /* Previous_Bills.swift */; };
+		3A1849282BA4C5F30009EE9A /* ProductDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1849272BA4C5F30009EE9A /* ProductDetails.swift */; };
+		3A18492A2BA4C6830009EE9A /* BillGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1849292BA4C6830009EE9A /* BillGen.swift */; };
+		3A4BB9D82B859E3E00D948B6 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BB9D72B859E3E00D948B6 /* LoginVC.swift */; };
 		3A6ACDBD2B84507A00DEAB4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6ACDBC2B84507A00DEAB4C /* AppDelegate.swift */; };
 		3A6ACDBF2B84507A00DEAB4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6ACDBE2B84507A00DEAB4C /* SceneDelegate.swift */; };
 		3A6ACDC12B84507A00DEAB4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6ACDC02B84507A00DEAB4C /* ViewController.swift */; };
 		3A6ACDC42B84507A00DEAB4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6ACDC22B84507A00DEAB4C /* Main.storyboard */; };
 		3A6ACDC62B84508800DEAB4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A6ACDC52B84508800DEAB4C /* Assets.xcassets */; };
 		3A6ACDC92B84508800DEAB4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6ACDC72B84508800DEAB4C /* LaunchScreen.storyboard */; };
-		3ABF314B2B89525000A9A7B8 /* BillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABF314A2B89525000A9A7B8 /* BillViewController.swift */; };
-		3ACEA2FE2B97F8AE00A3E865 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEA2FD2B97F8AE00A3E865 /* DesignableView.swift */; };
+		3AEF6C742BA0EE63009DD18A /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF6C732BA0EE63009DD18A /* CreateAccountVC.swift */; };
+		3AEF6C862BA0F05E009DD18A /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF6C852BA0F05E009DD18A /* DesignableView.swift */; };
+		3AEF6C882BA0F0CB009DD18A /* logoutVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF6C872BA0F0CB009DD18A /* logoutVCViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A4BB9D72B859E3E00D948B6 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
-		3A4BD7D92B86B71A0054A8BF /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		3A0868FD2BA3BFA000E1DB37 /* ButtonWithShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonWithShadow.swift; sourceTree = "<group>"; };
+		3A18491D2BA4BAD70009EE9A /* UploadImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageVC.swift; sourceTree = "<group>"; };
+		3A18491F2BA4BB3F0009EE9A /* CartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
+		3A1849212BA4BBD20009EE9A /* BillStatementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillStatementVC.swift; sourceTree = "<group>"; };
+		3A1849232BA4C4100009EE9A /* ImageBGController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBGController.swift; sourceTree = "<group>"; };
+		3A1849252BA4C56E0009EE9A /* Previous_Bills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Previous_Bills.swift; sourceTree = "<group>"; };
+		3A1849272BA4C5F30009EE9A /* ProductDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetails.swift; sourceTree = "<group>"; };
+		3A1849292BA4C6830009EE9A /* BillGen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillGen.swift; sourceTree = "<group>"; };
+		3A4BB9D72B859E3E00D948B6 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		3A6ACDB92B84507A00DEAB4C /* SmartBill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartBill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6ACDBC2B84507A00DEAB4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A6ACDBE2B84507A00DEAB4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,8 +45,9 @@
 		3A6ACDC52B84508800DEAB4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A6ACDC82B84508800DEAB4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A6ACDCA2B84508800DEAB4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3ABF314A2B89525000A9A7B8 /* BillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillViewController.swift; sourceTree = "<group>"; };
-		3ACEA2FD2B97F8AE00A3E865 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		3AEF6C732BA0EE63009DD18A /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		3AEF6C852BA0F05E009DD18A /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		3AEF6C872BA0F0CB009DD18A /* logoutVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logoutVCViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +80,51 @@
 		3A6ACDBB2B84507A00DEAB4C /* SmartBill */ = {
 			isa = PBXGroup;
 			children = (
-				3A6ACDBC2B84507A00DEAB4C /* AppDelegate.swift */,
-				3A6ACDBE2B84507A00DEAB4C /* SceneDelegate.swift */,
-				3A6ACDC02B84507A00DEAB4C /* ViewController.swift */,
+				3AEF6C842BA0F026009DD18A /* Extension */,
+				3AEF6C812BA0EFC5009DD18A /* Others */,
+				3AEF6C802BA0EF93009DD18A /* ViewControllers */,
 				3A6ACDC22B84507A00DEAB4C /* Main.storyboard */,
-				3ACEA2FD2B97F8AE00A3E865 /* DesignableView.swift */,
-				3ABF314A2B89525000A9A7B8 /* BillViewController.swift */,
-				3A4BD7D92B86B71A0054A8BF /* CreateAccountVC.swift */,
-				3A4BB9D72B859E3E00D948B6 /* Login.swift */,
 				3A6ACDC52B84508800DEAB4C /* Assets.xcassets */,
 				3A6ACDC72B84508800DEAB4C /* LaunchScreen.storyboard */,
 				3A6ACDCA2B84508800DEAB4C /* Info.plist */,
 			);
 			path = SmartBill;
+			sourceTree = "<group>";
+		};
+		3AEF6C802BA0EF93009DD18A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A6ACDC02B84507A00DEAB4C /* ViewController.swift */,
+				3A4BB9D72B859E3E00D948B6 /* LoginVC.swift */,
+				3AEF6C732BA0EE63009DD18A /* CreateAccountVC.swift */,
+				3AEF6C872BA0F0CB009DD18A /* logoutVCViewController.swift */,
+				3A18491D2BA4BAD70009EE9A /* UploadImageVC.swift */,
+				3A18491F2BA4BB3F0009EE9A /* CartVC.swift */,
+				3A1849212BA4BBD20009EE9A /* BillStatementVC.swift */,
+				3A1849232BA4C4100009EE9A /* ImageBGController.swift */,
+				3A1849252BA4C56E0009EE9A /* Previous_Bills.swift */,
+				3A1849272BA4C5F30009EE9A /* ProductDetails.swift */,
+				3A1849292BA4C6830009EE9A /* BillGen.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3AEF6C812BA0EFC5009DD18A /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				3A6ACDBE2B84507A00DEAB4C /* SceneDelegate.swift */,
+				3A6ACDBC2B84507A00DEAB4C /* AppDelegate.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		3AEF6C842BA0F026009DD18A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3A0868FD2BA3BFA000E1DB37 /* ButtonWithShadow.swift */,
+				3AEF6C852BA0F05E009DD18A /* DesignableView.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,12 +199,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A6ACDC12B84507A00DEAB4C /* ViewController.swift in Sources */,
+				3A1849202BA4BB3F0009EE9A /* CartVC.swift in Sources */,
 				3A6ACDBD2B84507A00DEAB4C /* AppDelegate.swift in Sources */,
 				3A6ACDBF2B84507A00DEAB4C /* SceneDelegate.swift in Sources */,
-				3A4BB9D82B859E3E00D948B6 /* Login.swift in Sources */,
-				3ACEA2FE2B97F8AE00A3E865 /* DesignableView.swift in Sources */,
-				3A4BD7DA2B86B71A0054A8BF /* CreateAccountVC.swift in Sources */,
-				3ABF314B2B89525000A9A7B8 /* BillViewController.swift in Sources */,
+				3A18491E2BA4BAD70009EE9A /* UploadImageVC.swift in Sources */,
+				3A18492A2BA4C6830009EE9A /* BillGen.swift in Sources */,
+				3A1849262BA4C56E0009EE9A /* Previous_Bills.swift in Sources */,
+				3A1849222BA4BBD20009EE9A /* BillStatementVC.swift in Sources */,
+				3A1849282BA4C5F30009EE9A /* ProductDetails.swift in Sources */,
+				3A0868FE2BA3BFA000E1DB37 /* ButtonWithShadow.swift in Sources */,
+				3AEF6C862BA0F05E009DD18A /* DesignableView.swift in Sources */,
+				3AEF6C882BA0F0CB009DD18A /* logoutVCViewController.swift in Sources */,
+				3AEF6C742BA0EE63009DD18A /* CreateAccountVC.swift in Sources */,
+				3A1849242BA4C4100009EE9A /* ImageBGController.swift in Sources */,
+				3A4BB9D82B859E3E00D948B6 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
