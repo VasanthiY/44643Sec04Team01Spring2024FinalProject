@@ -136,6 +136,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
+                                                    <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jwq-O4-g1e"/>
                                                     <segue destination="etQ-VG-Yqx" kind="show" id="EOI-B0-LiZ"/>
                                                 </connections>
                                             </button>
@@ -163,6 +164,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
                                                         <connections>
+                                                            <action selector="onSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ww5-qj-JsB"/>
                                                             <segue destination="HV6-Gz-5ci" kind="show" id="pPf-2q-hEf"/>
                                                         </connections>
                                                     </button>
@@ -184,6 +186,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VGi-iE-MWj"/>
+                    <connections>
+                        <outlet property="emailId" destination="9R9-6s-HJl" id="VFY-Ba-2jt"/>
+                        <outlet property="password" destination="F03-VE-S39" id="d0I-Mt-Kax"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -249,7 +255,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="pTN-uy-vUJ">
                         <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="ITP-ej-ugS">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="BAp-dW-TTm">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="BAp-dW-TTm">
                                 <rect key="frame" x="290" y="5" width="87" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -408,7 +414,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Dp7-kE-7fO">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="n7J-fa-HTb">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="kaq-Pu-XgB">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="kaq-Pu-XgB">
                                 <rect key="frame" x="298" y="0.0" width="79" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
