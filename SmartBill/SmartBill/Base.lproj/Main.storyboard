@@ -730,6 +730,9 @@
                                                         <integer key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onSignUp:" destination="HV6-Gz-5ci" eventType="touchUpInside" id="cDa-Dw-ves"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
@@ -756,6 +759,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rEC-H5-56y"/>
+                    <connections>
+                        <outlet property="confirmPass" destination="uFx-Sf-dvr" id="6VZ-JQ-suN"/>
+                        <outlet property="email" destination="gm7-zg-p4A" id="iVY-uX-NPJ"/>
+                        <outlet property="lockButton" destination="LY7-jk-kep" id="y5F-AE-Bm0"/>
+                        <outlet property="name" destination="izt-W9-tvE" id="Yyi-5z-RUm"/>
+                        <outlet property="password" destination="Hzq-LH-hkc" id="MzH-Tt-ufw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ycD-9P-8vQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
