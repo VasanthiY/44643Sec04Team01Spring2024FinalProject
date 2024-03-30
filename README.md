@@ -11,7 +11,8 @@
 [Sprint 01](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/blob/main/README.md#sprint-01) ||
 [Sprint 02](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/blob/main/README.md#sprint-02) ||
 [Sprint 03](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/blob/main/README.md#sprint-03) ||
-[Sprint 04](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/blob/main/README.md#sprint-04)
+[Sprint 04](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/blob/main/README.md#sprint-04) ||
+[Sprint 05](https://github.com/VasanthiY/44643Sec04Team01Spring2024FinalProject/blob/main/README.md#sprint-05) ||
 
 ### App Description:
 Our "Smart Bill" is a bill generator application intends to provide convenience to users by detecting the items a user wants to purchase and generate an order Receipt. We are planning to use Machine Learning algorithms to train the model for detecting the items scanned.
@@ -49,3 +50,4 @@ Updated our application UI screens and tried to integrate ML and firebase into i
 | Sprint 02 | [Doc](https://nwmissouri.sharepoint.com/:x:/s/IOS-Sec04_Team01/EcGefjPg4BNLndgnt4ViCY4BWJnrOSs9peFJce2_K_1jTg?e=GSP856) |
 | Sprint 03 | [Doc](https://nwmissouri.sharepoint.com/:x:/s/IOS-Sec04_Team01/EZJH3NioeOhLu5sg63Ajzt0Bjfx5kHpDj3wGXG3qcEiqdQ?e=F2hq1m) |
 | Sprint 04 | [Doc](https://nwmissouri.sharepoint.com/:x:/s/IOS-Sec04_Team01/ERUZB6APkUFKhs28eYyjgS4BMS-MEosO46BHkvhNQQ-VCA?e=Hcv4in) |
+| Sprint 05 | [Doc](https://nwmissouri.sharepoint.com/:x:/s/IOS-Sec04_Team01/ET434yWs5zpBgZigWmsGDsYBcR6R3FM8jiniVPCY7NGHAg?e=xtFX0v) |
