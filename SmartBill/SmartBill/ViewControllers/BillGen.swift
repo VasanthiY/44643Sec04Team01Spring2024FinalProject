@@ -8,6 +8,11 @@
 import UIKit
 
 class BillGen: UIViewController {
+    
+    //let imagePredictor = ImagePredictor()
+    var predictionText = ""
+    let predictionsToShow = 1
+    var selectedImage = UIImage()
 
     @IBOutlet weak var BillBTN: UIButton!
     
@@ -31,10 +36,26 @@ class BillGen: UIViewController {
     
    
     @IBAction func prevBillBTN(_ sender: UIButton) {
+        
+        present(photoPicker, animated: false)
+    }
+    
+    @IBAction func BillGenBTN(_ sender: UIButton) {
     }
     
     
-    @IBAction func BillGenBTN(_ sender: UIButton) {
+    
+    extension BillGen {
+      
+       func userSelectedPhoto(_ photo: UIImage) {
+          
+           self.selectedImage = photo
+           
+           DispatchQueue.global(qos: .userInitiated).async {
+               self.classifyImage(photo)
+           }
+       }
+
     }
 
     /*
@@ -48,3 +69,10 @@ class BillGen: UIViewController {
     */
 
 }
+
+
+
+
+
+
+
