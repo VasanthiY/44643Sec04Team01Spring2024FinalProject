@@ -42,6 +42,9 @@ Created an application in Xcode for our project and divided screens among oursel
 #### Sprint 04
 Updated our application UI screens and tried to integrate ML and firebase into it.
 
+#### Sprint 05
+Updated code changes for all our screens.
+
 ### Sprint Reports
 
 | Sprint | Link|
