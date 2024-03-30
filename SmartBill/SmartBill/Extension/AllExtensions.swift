@@ -37,3 +37,15 @@ func showAlertAnyWhere(message:String){
    UIApplication.topViewController()!.present(alert, animated: true, completion: nil)
    }
 }
+
+extension UIViewController{
+    func showAlert(message:String){
+        let alert = UIAlertController(title: "Message", message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .default) { (alert) in
+            
+           // completion?(true)
+        }
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
+}
