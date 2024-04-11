@@ -21,11 +21,18 @@ class ProductDetails: UIViewController {
     
     @IBOutlet weak var amount: UITextField!
     
+    
+    @IBOutlet weak var itemName: UITextField!
+    var predictionText = ""
+    
+    var image = UIImage()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        addBTN.isEnabled = true
+        
+//        self.imageView.image = image
+//        self.itemName.text = self.predictionText
+//        // Do any additional setup after loading the view.
+//        addBTN.isEnabled = true
         
     }
     
