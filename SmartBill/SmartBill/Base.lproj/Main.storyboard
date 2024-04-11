@@ -83,7 +83,7 @@
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                             </textField>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRw-rT-og1">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRw-rT-og1" userLabel="Lock Button">
                                                                 <rect key="frame" x="309" y="7.6666666666666288" width="52" height="35"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="35" id="bCu-nn-Eou"/>
@@ -92,6 +92,9 @@
                                                                 <color key="tintColor" red="0.66666668650000005" green="0.36078432199999999" blue="0.89803922179999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" image="lock" catalog="system" title=" "/>
+                                                                <connections>
+                                                                    <action selector="onClickLockBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Zu-Ct-OAr"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -136,35 +139,33 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jwq-O4-g1e"/>
-                                                    <segue destination="etQ-VG-Yqx" kind="show" id="EOI-B0-LiZ"/>
+                                                    <action selector="onClickContinue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S8e-ML-v8T"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
                                     </stackView>
                                     <view contentMode="scaleToFill" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="Bvb-sz-cej">
-                                        <rect key="frame" x="0.0" y="608.66666666666663" width="393" height="173"/>
+                                        <rect key="frame" x="0.0" y="608.66666666666663" width="393" height="159"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sPw-Sl-HOz">
-                                        <rect key="frame" x="0.0" y="789.66666666666663" width="393" height="20.333333333333371"/>
+                                        <rect key="frame" x="0.0" y="775.66666666666663" width="393" height="34.333333333333371"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="y1b-zC-bEC">
-                                                <rect key="frame" x="61.333333333333343" y="0.0" width="270.66666666666663" height="20.333333333333332"/>
+                                                <rect key="frame" x="61.333333333333343" y="0.0" width="270.66666666666663" height="34.333333333333336"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wfd-cB-PcC">
-                                                        <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="20.333333333333332"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="34.333333333333336"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpi-mx-UEr">
-                                                        <rect key="frame" x="186.66666666666666" y="0.0" width="83.999999999999972" height="20.333333333333332"/>
+                                                        <rect key="frame" x="186.66666666666666" y="0.0" width="83.999999999999972" height="34.333333333333336"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
                                                         <connections>
-                                                            <action selector="onSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ww5-qj-JsB"/>
                                                             <segue destination="HV6-Gz-5ci" kind="show" id="pPf-2q-hEf"/>
                                                         </connections>
                                                     </button>
@@ -187,9 +188,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="VGi-iE-MWj"/>
                     <connections>
-                        <outlet property="emailId" destination="9R9-6s-HJl" id="VFY-Ba-2jt"/>
-                        <outlet property="lockButton" destination="HRw-rT-og1" id="sk6-dJ-CqV"/>
-                        <outlet property="password" destination="F03-VE-S39" id="d0I-Mt-Kax"/>
+                        <outlet property="emailAddress" destination="9R9-6s-HJl" id="5xa-4l-wel"/>
+                        <outlet property="lockBTN" destination="HRw-rT-og1" id="4kV-jF-1L0"/>
+                        <outlet property="pwd" destination="F03-VE-S39" id="IvZ-mg-GJN"/>
+                        <segue destination="etQ-VG-Yqx" kind="show" identifier="successLogin" id="lr1-JY-4hF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -781,7 +783,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qRD-Ti-Cnz" userLabel="BigContainer">
-                                <rect key="frame" x="50" y="153" width="293" height="615"/>
+                                <rect key="frame" x="50" y="152.99999999999997" width="293" height="265.33333333333326"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8R7-LQ-Qmj">
                                         <rect key="frame" x="31.666666666666671" y="0.0" width="229.66666666666663" height="126.66666666666667"/>
@@ -827,7 +829,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUK-Kz-Hmg">
-                                        <rect key="frame" x="108" y="218.66666666666671" width="77.333333333333314" height="396.33333333333326"/>
+                                        <rect key="frame" x="108" y="218.66666666666669" width="77.333333333333314" height="46.666666666666686"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Logout"/>
                                         <connections>

@@ -1,34 +1,36 @@
 //
-//  Login.swift
+//  LoginVC.swift
 //  SmartBill
 //
-//  Created by Krishna Vasanthi on 2/20/24.
+//  Created by Krishna Vasanthi on 4/9/24.
 //
 
 import UIKit
 
 class LoginVC: UIViewController {
-
     
-    @IBOutlet weak var lockButton: UIButton!
-    @IBOutlet weak var emailId: UITextField!
+    @IBOutlet var emailAddress: UITextField!
+    @IBOutlet var pwd: UITextField!
+    @IBOutlet var lockBTN: UIButton!
     
-    @IBOutlet weak var password: UITextField!
+    @IBAction func onClickContinue(_ sender: Any) {
+        if emailAddress.text!.isEmpty {
+            self.displayAlert(message: "Please enter valid email address!")
+            return
+        }
+        
+        if pwd.text!.isEmpty {
+            self.displayAlert(message: "Please enter valid password!")
+            return
+        }
+        
+        performSegue(withIdentifier: "successLogin", sender: self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         
-        
-    }
-    
-    
-    
-    @IBAction func onLogin(_ sender: UIButton) {
-        let email = emailId.text!.lowercased()
-        
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "TabBarVC")
-        vc!.modalPresentationStyle = .fullScreen
-        self.present(vc!, animated: true)
+
+        // Do any additional setup after loading the view.
     }
     
     func showSessionExpireAlert() {
@@ -36,34 +38,25 @@ class LoginVC: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.showAlert(message:  "Session expired")
         }
+    }
+    
+    private func displayAlert(message: String) {
+        let alert = UIAlertController(title: "Invalid Credentials", message: message, preferredStyle: .alert)
         
+        let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
     }
     
-    
-    @IBAction func onSignUp(_ sender: UIButton) {
-    }
-    
-   
 
-}
+    /*
+    // MARK: - Navigation
 
-extension LoginVC {
-    
-    
-    func setLockImage() {
-        
-        self.password.isSecureTextEntry =  !self.password.isSecureTextEntry
-        
-        if(self.password.isSecureTextEntry) {
-            self.lockButton.setImage(UIImage(systemName: "lock"), for: .normal)
-        }else {
-            self.lockButton.setImage(UIImage(systemName: "lock.open"), for: .normal)
-        }
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
     }
-   
-    @IBAction func onLockUnlock(_ sender: Any) {
-        
-        setLockImage()
-    }
-    
+    */
+
 }
