@@ -33,13 +33,6 @@ class LoginVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    func showSessionExpireAlert() {
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.showAlert(message:  "Session expired")
-        }
-    }
-    
     private func displayAlert(message: String) {
         let alert = UIAlertController(title: "Invalid Credentials", message: message, preferredStyle: .alert)
         
