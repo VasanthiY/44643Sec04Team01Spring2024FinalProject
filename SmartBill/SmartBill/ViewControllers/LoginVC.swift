@@ -1,18 +1,44 @@
 //
-//  Login.swift
+//  LoginVC.swift
 //  SmartBill
 //
-//  Created by Krishna Vasanthi on 2/20/24.
+//  Created by Krishna Vasanthi on 4/9/24.
 //
 
 import UIKit
 
 class LoginVC: UIViewController {
-
+    
+    @IBOutlet var emailAddress: UITextField!
+    @IBOutlet var pwd: UITextField!
+    @IBOutlet var lockBTN: UIButton!
+    
+    @IBAction func onClickContinue(_ sender: Any) {
+        if emailAddress.text!.isEmpty {
+            self.displayAlert(message: "Please enter valid email address!")
+            return
+        }
+        
+        if pwd.text!.isEmpty {
+            self.displayAlert(message: "Please enter valid password!")
+            return
+        }
+        
+        performSegue(withIdentifier: "successLogin", sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    private func displayAlert(message: String) {
+        let alert = UIAlertController(title: "Invalid Credentials", message: message, preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
     }
     
 
