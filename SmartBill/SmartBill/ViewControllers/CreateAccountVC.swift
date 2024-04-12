@@ -97,7 +97,14 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
             return
         }
         
-        performSegue(withIdentifier: "CreateToLoginSegue", sender: self)
+        Task {
+            do {
+                try await AuthenticationManager.shared.createUser(email: email.text!, password: password.text!)
+                performSegue(withIdentifier: "CreateToLoginSegue", sender: self)
+            } catch {
+                return
+            }
+        }
     }
     
     func containsSpecialCharacter(in string: String) -> Bool {

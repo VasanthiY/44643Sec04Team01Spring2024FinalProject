@@ -1,39 +1,38 @@
 //
-//  LoginVC.swift
+//  ResetVC.swift
 //  SmartBill
 //
-//  Created by Krishna Vasanthi on 4/9/24.
+//  Created by Krishna Vasanthi on 4/11/24.
 //
 
 import UIKit
 
-class LoginVC: UIViewController {
+class ResetVC: UIViewController {
     
-    @IBOutlet var emailAddress: UITextField!
-    @IBOutlet var pwd: UITextField!
-    @IBOutlet var lockBTN: UIButton!
+    @IBOutlet weak var emailAddress: UITextField!
     
-    @IBAction func onClickContinue(_ sender: Any) {
-        if emailAddress.text!.isEmpty {
+    @IBOutlet weak var sendLinkButton: UIButton!
+    
+    @IBOutlet weak var cancelBTN: UIButton!
+    
+    @IBAction func onClickSendLink(_ sender: Any) {
+        if let email = emailAddress.text, email.isEmpty {
             self.displayAlert(message: "Please enter valid email address!")
-            return
-        }
-        
-        if pwd.text!.isEmpty {
-            self.displayAlert(message: "Please enter valid password!")
             return
         }
         
         Task {
             do {
-                try await AuthenticationManager.shared.signIn(email: emailAddress.text!, password: pwd.text!)
-                performSegue(withIdentifier: "successLogin", sender: self)
-            } catch {
-                self.displayAlert(message: "Invalid Login Credentials! Please try again.")
-                return
+                try await AuthenticationManager.shared.resetPassword(email: emailAddress.text!)
+                performSegue(withIdentifier: "resetPasswordToLogin", sender: self)
             }
         }
     }
+    
+    @IBAction func onClickCancel(_ sender: Any) {
+        performSegue(withIdentifier: "resetPasswordToLogin", sender: self)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
