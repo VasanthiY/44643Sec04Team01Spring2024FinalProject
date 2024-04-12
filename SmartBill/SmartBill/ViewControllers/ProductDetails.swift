@@ -29,11 +29,11 @@ class ProductDetails: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.imageView.image = image
-//        self.itemName.text = self.predictionText
-//        // Do any additional setup after loading the view.
-//        addBTN.isEnabled = true
-        
+        self.imageView.image = image
+        self.itemName.text = self.predictionText
+        // Do any additional setup after loading the view.
+        addBTN.isEnabled = true
+        self.stepper.isEnabled
     }
     
     @IBAction func addBTN(_ sender: UIButton) {
