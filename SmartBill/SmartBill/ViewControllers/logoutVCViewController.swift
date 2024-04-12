@@ -9,6 +9,8 @@ import UIKit
 
 class logoutVCViewController: UIViewController {
 
+    @IBAction func Logout(_ sender: UIButton) {
+    }
     @IBOutlet weak var displayEmail: UITextField!
     
     @IBOutlet weak var displayName: UITextField!

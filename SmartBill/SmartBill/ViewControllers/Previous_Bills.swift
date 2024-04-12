@@ -9,6 +9,12 @@ import UIKit
 
 class Previous_Bills: UIViewController {
 
+    @IBOutlet weak var output_display: UITextView!
+    @IBAction func Bill_Stepper(_ sender: UISegmentedControl) {
+    }
+    @IBOutlet weak var Stepper: UISegmentedControl!
+    @IBAction func arrow_BTN(_ sender: UIButton) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
