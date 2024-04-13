@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044C4F572BCA3713000D6083 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C4F562BCA3713000D6083 /* Models.swift */; };
 		3A0868FE2BA3BFA000E1DB37 /* ButtonWithShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0868FD2BA3BFA000E1DB37 /* ButtonWithShadow.swift */; };
 		3A18491E2BA4BAD70009EE9A /* UploadImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18491D2BA4BAD70009EE9A /* UploadImageVC.swift */; };
 		3A1849202BA4BB3F0009EE9A /* CartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18491F2BA4BB3F0009EE9A /* CartVC.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		044C4F562BCA3713000D6083 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		3A0868FD2BA3BFA000E1DB37 /* ButtonWithShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonWithShadow.swift; sourceTree = "<group>"; };
 		3A18491D2BA4BAD70009EE9A /* UploadImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageVC.swift; sourceTree = "<group>"; };
 		3A18491F2BA4BB3F0009EE9A /* CartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				3A1849252BA4C56E0009EE9A /* Previous_Bills.swift */,
 				3A1849272BA4C5F30009EE9A /* ProductDetails.swift */,
 				3A1849292BA4C6830009EE9A /* BillGen.swift */,
+				044C4F562BCA3713000D6083 /* Models.swift */,
 				3A9EE9542BC6254E00056653 /* LoginVC.swift */,
 			);
 			path = ViewControllers;
@@ -230,6 +233,7 @@
 				3AEF6C862BA0F05E009DD18A /* DesignableView.swift in Sources */,
 				3AEF6C882BA0F0CB009DD18A /* logoutVCViewController.swift in Sources */,
 				3AEF6C742BA0EE63009DD18A /* CreateAccountVC.swift in Sources */,
+				044C4F572BCA3713000D6083 /* Models.swift in Sources */,
 				3AC1E5732BB603B400BFF616 /* String.swift in Sources */,
 				3A1849242BA4C4100009EE9A /* ImageBGController.swift in Sources */,
 			);
