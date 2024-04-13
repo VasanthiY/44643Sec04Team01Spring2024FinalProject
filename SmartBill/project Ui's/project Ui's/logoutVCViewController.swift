@@ -1,26 +1,23 @@
 //
-//  AccountDetailsVC.swift
-//  SmartBill
+//  loginVCViewController.swift
+//  project Ui's
 //
-//  Created by Krishna Vasanthi on 3/12/24.
+//  Created by kalpana on 2/23/24.
 //
 
 import UIKit
 
 class logoutVCViewController: UIViewController {
 
-    @IBAction func Logout(_ sender: UIButton) {
-    }
     @IBOutlet weak var displayEmail: UITextField!
-    
     @IBOutlet weak var displayName: UITextField!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
+
     @IBAction func Logout(_ sender: UIButton) {
         if displayEmail.text == "" {
             
@@ -34,15 +31,6 @@ class logoutVCViewController: UIViewController {
             return
         }
     }
-    
-    func showAlert(str: String) -> Void {
-        
-        
-        let alert = UIAlertController(title: "Are you sure to exit", message: str, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
-    }
-
     /*
     // MARK: - Navigation
 
@@ -52,5 +40,12 @@ class logoutVCViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    func showAlert(str: String) -> Void {
+        
+        
+        let alert = UIAlertController(title: "Are you sure to exit", message: str, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 
 }

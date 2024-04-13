@@ -1,20 +1,15 @@
 //
-//  Previous_Bills.swift
-//  SmartBill
+//  Previous Bills.swift
+//  project Ui's
 //
-//  Created by Krishna Vasanthi on 3/15/24.
+//  Created by kalpana on 2/23/24.
 //
 
 import UIKit
 
 class Previous_Bills: UIViewController {
 
-    @IBOutlet weak var output_display: UITextView!
-    @IBAction func Bill_Stepper(_ sender: UISegmentedControl) {
-    }
-    @IBOutlet weak var Stepper: UISegmentedControl!
-    @IBAction func arrow_BTN(_ sender: UIButton) {
-    }
+    @IBOutlet weak var backBTN: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
