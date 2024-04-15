@@ -34,11 +34,11 @@ class logoutVCViewController: UIViewController {
     
     
     func showAlert(str: String) -> Void {
-        
-        
         let alert = UIAlertController(title: "Are you sure to exit", message: str, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (_) in
+            // Perform segue when user selects "Yes"
+            self.performSegue(withIdentifier: "LogoutTohome", sender: self)
+        }))
     }
 
     /*

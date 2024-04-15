@@ -265,9 +265,6 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="person.fill" catalog="system"/>
                             </button>
-                            <connections>
-                                <segue destination="aVx-0o-3RQ" kind="show" id="5Up-9o-9oE"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -533,7 +530,7 @@
             <objects>
                 <viewController id="HV6-Gz-5ci" customClass="CreateAccountVC" customModule="SmartBill" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t5E-la-P1m">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Icl-KX-reL" userLabel="BigContainerSV">
@@ -793,11 +790,11 @@
             <objects>
                 <viewController id="aVx-0o-3RQ" customClass="logoutVCViewController" customModule="SmartBill" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YzL-tb-7CK">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oKq-RY-NS8">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Cf-pA-ZcY">
                                         <rect key="frame" x="0.0" y="8" width="393" height="250"/>
@@ -909,13 +906,14 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="Logout:" destination="aVx-0o-3RQ" eventType="touchUpInside" id="Kog-hd-qlJ"/>
+                                                    <segue destination="etQ-VG-Yqx" kind="show" identifier="LogoutTohome" id="Vqp-wJ-xkw"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
                                     </stackView>
                                     <view contentMode="scaleToFill" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="aVg-MU-Snf">
-                                        <rect key="frame" x="0.0" y="483" width="393" height="351"/>
+                                        <rect key="frame" x="0.0" y="483" width="393" height="268"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
@@ -1036,6 +1034,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Vqp-wJ-xkw"/>
         <segue reference="C2T-cI-T90"/>
     </inferredMetricsTieBreakers>
     <resources>
