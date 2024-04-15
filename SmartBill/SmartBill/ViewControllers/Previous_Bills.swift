@@ -8,7 +8,7 @@
 import UIKit
 
 class Previous_Bills: UIViewController {
-
+    var currentIndex: Int = 0
     @IBOutlet weak var output_display: UITextView!
     @IBAction func Bill_Stepper(_ sender: UISegmentedControl) {
     }
@@ -17,11 +17,16 @@ class Previous_Bills: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+      
+               
+        Stepper.selectedSegmentIndex = currentIndex
         // Do any additional setup after loading the view.
     }
     
-
+    func loadPreviousBills() {
+            // Example: Fetch previous bills from a database or any other source
+            // Populate the `previousBills` array with the retrieved data
+        }
     /*
     // MARK: - Navigation
 
@@ -31,5 +36,6 @@ class Previous_Bills: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
 
 }
