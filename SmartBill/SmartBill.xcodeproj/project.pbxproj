@@ -15,6 +15,14 @@
 		3A1849262BA4C56E0009EE9A /* Previous_Bills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1849252BA4C56E0009EE9A /* Previous_Bills.swift */; };
 		3A1849282BA4C5F30009EE9A /* ProductDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1849272BA4C5F30009EE9A /* ProductDetails.swift */; };
 		3A18492A2BA4C6830009EE9A /* BillGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1849292BA4C6830009EE9A /* BillGen.swift */; };
+		3A657C1A2BC88E0F00211FF1 /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A657C192BC88E0F00211FF1 /* AuthenticationModel.swift */; };
+		3A657C1C2BC896E200211FF1 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3A657C1B2BC896E200211FF1 /* FirebaseDatabase */; };
+		3A657C1E2BC8984100211FF1 /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A657C1D2BC8984100211FF1 /* FirebaseModel.swift */; };
+		3A657C202BC8986800211FF1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3A657C1F2BC8986800211FF1 /* FirebaseFirestore */; };
+		3A657C232BC89F1A00211FF1 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 3A657C222BC89F1A00211FF1 /* Lottie */; };
+		3A657C252BC8A0FC00211FF1 /* ResetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A657C242BC8A0FC00211FF1 /* ResetVC.swift */; };
+		3A657C272BC8A19B00211FF1 /* BillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A657C262BC8A19B00211FF1 /* BillVC.swift */; };
+		3A657C2F2BC8A93000211FF1 /* smart_bill.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A657C2E2BC8A93000211FF1 /* smart_bill.json */; };
 		3A6ACDBD2B84507A00DEAB4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6ACDBC2B84507A00DEAB4C /* AppDelegate.swift */; };
 		3A6ACDBF2B84507A00DEAB4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6ACDBE2B84507A00DEAB4C /* SceneDelegate.swift */; };
 		3A6ACDC12B84507A00DEAB4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6ACDC02B84507A00DEAB4C /* ViewController.swift */; };
@@ -40,6 +48,11 @@
 		3A1849252BA4C56E0009EE9A /* Previous_Bills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Previous_Bills.swift; sourceTree = "<group>"; };
 		3A1849272BA4C5F30009EE9A /* ProductDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetails.swift; sourceTree = "<group>"; };
 		3A1849292BA4C6830009EE9A /* BillGen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillGen.swift; sourceTree = "<group>"; };
+		3A657C192BC88E0F00211FF1 /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
+		3A657C1D2BC8984100211FF1 /* FirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModel.swift; sourceTree = "<group>"; };
+		3A657C242BC8A0FC00211FF1 /* ResetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetVC.swift; sourceTree = "<group>"; };
+		3A657C262BC8A19B00211FF1 /* BillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillVC.swift; sourceTree = "<group>"; };
+		3A657C2E2BC8A93000211FF1 /* smart_bill.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = smart_bill.json; sourceTree = "<group>"; };
 		3A6ACDB92B84507A00DEAB4C /* SmartBill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartBill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6ACDBC2B84507A00DEAB4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A6ACDBE2B84507A00DEAB4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A657C232BC89F1A00211FF1 /* Lottie in Frameworks */,
+				3A657C1C2BC896E200211FF1 /* FirebaseDatabase in Frameworks */,
+				3A657C202BC8986800211FF1 /* FirebaseFirestore in Frameworks */,
 				3A9EE94F2BC619A700056653 /* FirebaseAppCheck in Frameworks */,
 				3A9EE9512BC619A700056653 /* FirebaseAuth in Frameworks */,
 			);
@@ -95,6 +111,9 @@
 				3A6ACDC52B84508800DEAB4C /* Assets.xcassets */,
 				3A6ACDC72B84508800DEAB4C /* LaunchScreen.storyboard */,
 				3A6ACDCA2B84508800DEAB4C /* Info.plist */,
+				3A657C2E2BC8A93000211FF1 /* smart_bill.json */,
+				3A657C192BC88E0F00211FF1 /* AuthenticationModel.swift */,
+				3A657C1D2BC8984100211FF1 /* FirebaseModel.swift */,
 			);
 			path = SmartBill;
 			sourceTree = "<group>";
@@ -113,6 +132,8 @@
 				3A1849272BA4C5F30009EE9A /* ProductDetails.swift */,
 				3A1849292BA4C6830009EE9A /* BillGen.swift */,
 				3A9EE9542BC6254E00056653 /* LoginVC.swift */,
+				3A657C242BC8A0FC00211FF1 /* ResetVC.swift */,
+				3A657C262BC8A19B00211FF1 /* BillVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -156,6 +177,9 @@
 			packageProductDependencies = (
 				3A9EE94E2BC619A700056653 /* FirebaseAppCheck */,
 				3A9EE9502BC619A700056653 /* FirebaseAuth */,
+				3A657C1B2BC896E200211FF1 /* FirebaseDatabase */,
+				3A657C1F2BC8986800211FF1 /* FirebaseFirestore */,
+				3A657C222BC89F1A00211FF1 /* Lottie */,
 			);
 			productName = SmartBill;
 			productReference = 3A6ACDB92B84507A00DEAB4C /* SmartBill.app */;
@@ -187,6 +211,7 @@
 			mainGroup = 3A6ACDB02B84507A00DEAB4C;
 			packageReferences = (
 				3A9EE94D2BC619A700056653 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3A657C212BC89F1A00211FF1 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 3A6ACDBA2B84507A00DEAB4C /* Products */;
 			projectDirPath = "";
@@ -202,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A657C2F2BC8A93000211FF1 /* smart_bill.json in Resources */,
 				3A6ACDC92B84508800DEAB4C /* LaunchScreen.storyboard in Resources */,
 				3A6ACDC62B84508800DEAB4C /* Assets.xcassets in Resources */,
 				3A6ACDC42B84507A00DEAB4C /* Main.storyboard in Resources */,
@@ -215,6 +241,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A657C252BC8A0FC00211FF1 /* ResetVC.swift in Sources */,
+				3A657C272BC8A19B00211FF1 /* BillVC.swift in Sources */,
 				3A6ACDC12B84507A00DEAB4C /* ViewController.swift in Sources */,
 				3A1849202BA4BB3F0009EE9A /* CartVC.swift in Sources */,
 				3A6ACDBD2B84507A00DEAB4C /* AppDelegate.swift in Sources */,
@@ -224,6 +252,8 @@
 				3A18492A2BA4C6830009EE9A /* BillGen.swift in Sources */,
 				3A1849262BA4C56E0009EE9A /* Previous_Bills.swift in Sources */,
 				3AC1E5712BB6034F00BFF616 /* AllExtensions.swift in Sources */,
+				3A657C1E2BC8984100211FF1 /* FirebaseModel.swift in Sources */,
+				3A657C1A2BC88E0F00211FF1 /* AuthenticationModel.swift in Sources */,
 				3A1849222BA4BBD20009EE9A /* BillStatementVC.swift in Sources */,
 				3A1849282BA4C5F30009EE9A /* ProductDetails.swift in Sources */,
 				3A0868FE2BA3BFA000E1DB37 /* ButtonWithShadow.swift in Sources */,
@@ -454,6 +484,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3A657C212BC89F1A00211FF1 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "http://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.2;
+			};
+		};
 		3A9EE94D2BC619A700056653 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -465,6 +503,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3A657C1B2BC896E200211FF1 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A9EE94D2BC619A700056653 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		3A657C1F2BC8986800211FF1 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A9EE94D2BC619A700056653 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		3A657C222BC89F1A00211FF1 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A657C212BC89F1A00211FF1 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
 		3A9EE94E2BC619A700056653 /* FirebaseAppCheck */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3A9EE94D2BC619A700056653 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
