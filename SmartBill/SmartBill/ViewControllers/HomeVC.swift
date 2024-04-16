@@ -15,8 +15,10 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        emailId = "test@gmail.com"
         Task {
-            try await FireStoreOperations.fetchUserName(emailId: emailId)
+            let userName = await FireStoreOperations.fetchUserName(emailId: emailId)
+            welcomeLBL.text = "Welcome \(userName)"
         }
     }
 
