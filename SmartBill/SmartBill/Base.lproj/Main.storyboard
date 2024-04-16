@@ -1136,6 +1136,9 @@
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="logout:" destination="aVx-0o-3RQ" eventType="touchUpInside" id="Fdb-VI-YeY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t0L-U2-WT4"/>
@@ -1156,6 +1159,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Wl0-N3-xM7"/>
+                    <connections>
+                        <outlet property="emailId" destination="kun-cI-iXG" id="LrZ-Fm-pZ0"/>
+                        <outlet property="fullName" destination="ODg-Yf-0FB" id="8lg-zq-Ygw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T6D-2s-8zY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
