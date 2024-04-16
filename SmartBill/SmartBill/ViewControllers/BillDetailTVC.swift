@@ -66,8 +66,21 @@ class BillDetailTVC: UITableViewController {
        }
     
     @IBAction func generateBill(_ sender: UIBarButtonItem) {
+        let alert = UIAlertController(title: "save bill", message: "Save the Generated Bill ?", preferredStyle: .alert)
+                
+        let ok = UIAlertAction(title: "ok", style: .default, handler: {_ in
+            let data = [
+            
+                "items": self.billitems.description,
+                "totalcost":self.billamount
+            ]
+            
+            FireStoreOperations.saveBill(data: data)
+        })
+        
+        alert.addAction(ok)
+        present(alert,animated: true,completion: nil)
     }
-    
     
     /*
     // Override to support conditional editing of the table view.
