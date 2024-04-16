@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import AVFoundation
+import Vision
 
-class UploadImageVC: UIViewController {
+class UploadImageVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     var detectedObjects = [String]()
     var matchedObjects = [String:Int]()
