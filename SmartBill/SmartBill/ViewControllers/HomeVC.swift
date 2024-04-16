@@ -9,14 +9,15 @@ import UIKit
 
 class HomeVC: UIViewController {
 
-    
-
     @IBOutlet weak var welcomeLBL: UILabel!
     
+    var emailId: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        Task {
+            try await FireStoreOperations.fetchUserName(emailId: emailId)
+        }
     }
 
     /*
