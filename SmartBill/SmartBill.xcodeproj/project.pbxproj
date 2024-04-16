@@ -32,6 +32,7 @@
 		3A9EE94F2BC619A700056653 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 3A9EE94E2BC619A700056653 /* FirebaseAppCheck */; };
 		3A9EE9512BC619A700056653 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3A9EE9502BC619A700056653 /* FirebaseAuth */; };
 		3A9EE9552BC6254E00056653 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9EE9542BC6254E00056653 /* LoginVC.swift */; };
+		3AA58B752BCE088100E8E66A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AA58B742BCE088100E8E66A /* GoogleService-Info.plist */; };
 		3AC1E5712BB6034F00BFF616 /* AllExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC1E5702BB6034F00BFF616 /* AllExtensions.swift */; };
 		3AC1E5732BB603B400BFF616 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC1E5722BB603B400BFF616 /* String.swift */; };
 		3AEF6C742BA0EE63009DD18A /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF6C732BA0EE63009DD18A /* CreateAccountVC.swift */; };
@@ -62,6 +63,7 @@
 		3A6ACDC82B84508800DEAB4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A6ACDCA2B84508800DEAB4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A9EE9542BC6254E00056653 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		3AA58B742BCE088100E8E66A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3AC1E5702BB6034F00BFF616 /* AllExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllExtensions.swift; sourceTree = "<group>"; };
 		3AC1E5722BB603B400BFF616 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		3AEF6C732BA0EE63009DD18A /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		3A6ACDBB2B84507A00DEAB4C /* SmartBill */ = {
 			isa = PBXGroup;
 			children = (
+				3AA58B742BCE088100E8E66A /* GoogleService-Info.plist */,
 				3AEF6C842BA0F026009DD18A /* Extension */,
 				3AEF6C812BA0EFC5009DD18A /* Others */,
 				3AEF6C802BA0EF93009DD18A /* ViewControllers */,
@@ -229,6 +232,7 @@
 			files = (
 				3A657C2F2BC8A93000211FF1 /* smart_bill.json in Resources */,
 				3A6ACDC92B84508800DEAB4C /* LaunchScreen.storyboard in Resources */,
+				3AA58B752BCE088100E8E66A /* GoogleService-Info.plist in Resources */,
 				3A6ACDC62B84508800DEAB4C /* Assets.xcassets in Resources */,
 				3A6ACDC42B84507A00DEAB4C /* Main.storyboard in Resources */,
 			);
