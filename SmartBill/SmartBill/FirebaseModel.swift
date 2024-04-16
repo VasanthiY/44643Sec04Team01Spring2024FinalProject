@@ -12,7 +12,7 @@ import FirebaseFirestore
 struct FireStoreOperations {
     static let db = Firestore.firestore()
 
-    public static func fetchUserName(emailId: String) -> String async {
+    public static func fetchUserName(emailId: String) async -> String {
         let userCollection = db.collection("userinfo")
         do{
             let userDocuments = try await userCollection.getDocuments().documents
@@ -22,7 +22,7 @@ struct FireStoreOperations {
                     let userData = user.data()
                     
                     let email = userData["email"] as? String ?? "N/A"
-                    let name = productData["username"] as? String ?? "N/A"
+                    let name = userData["username"] as? String ?? "N/A"
                     
                     if email == emailId {
                         return name
@@ -32,6 +32,6 @@ struct FireStoreOperations {
         } catch {
             print("Error getting document: \(error)")
         }
-        
+        return "nil"
     }
 }
