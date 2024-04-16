@@ -18,6 +18,7 @@ struct FireStoreOperations {
             let userDocuments = try await userCollection.getDocuments().documents
             
             for user in userDocuments{
+                print(user)
                 if user.exists {
                     let userData = user.data()
                     

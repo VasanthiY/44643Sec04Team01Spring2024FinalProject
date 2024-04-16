@@ -13,6 +13,8 @@ class LoginVC: UIViewController {
     @IBOutlet var pwd: UITextField!
     @IBOutlet var lockBTN: UIButton!
     
+    var emailId: String!
+    
     @IBAction func onClickContinue(_ sender: Any) {
         if emailAddress.text!.isEmpty {
             self.displayAlert(message: "Please enter valid email address!")
@@ -27,10 +29,20 @@ class LoginVC: UIViewController {
         Task {
             do {
                 try await AuthenticationManager.shared.signIn(email: emailAddress.text!, password: pwd.text!)
+                self.emailId = emailAddress.text!
                 performSegue(withIdentifier: "successLogin", sender: self)
             } catch {
                 self.displayAlert(message: "Invalid Login Credentials! Please try again.")
                 return
+            }
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "successLogin" {
+            // Access the destination view controller
+            if let destinationVC = segue.destination as? HomeVC {
+                destinationVC.emailId = self.emailId
             }
         }
     }
