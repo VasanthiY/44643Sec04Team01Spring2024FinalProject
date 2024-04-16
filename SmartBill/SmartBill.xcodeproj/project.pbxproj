@@ -37,6 +37,7 @@
 		3AEF6C742BA0EE63009DD18A /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF6C732BA0EE63009DD18A /* CreateAccountVC.swift */; };
 		3AEF6C862BA0F05E009DD18A /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF6C852BA0F05E009DD18A /* DesignableView.swift */; };
 		3AEF6C882BA0F0CB009DD18A /* LogoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF6C872BA0F0CB009DD18A /* LogoutVC.swift */; };
+		3CB250F22BCE2D2500B03949 /* BillDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB250F12BCE2D2500B03949 /* BillDetailTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		3AEF6C732BA0EE63009DD18A /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		3AEF6C852BA0F05E009DD18A /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		3AEF6C872BA0F0CB009DD18A /* LogoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutVC.swift; sourceTree = "<group>"; };
+		3CB250F12BCE2D2500B03949 /* BillDetailTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillDetailTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 		3AEF6C802BA0EF93009DD18A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3CB250F12BCE2D2500B03949 /* BillDetailTVC.swift */,
 				3A6ACDC02B84507A00DEAB4C /* ViewController.swift */,
 				3AEF6C732BA0EE63009DD18A /* CreateAccountVC.swift */,
 				3AEF6C872BA0F0CB009DD18A /* LogoutVC.swift */,
@@ -249,6 +252,7 @@
 				3A6ACDBD2B84507A00DEAB4C /* AppDelegate.swift in Sources */,
 				3A6ACDBF2B84507A00DEAB4C /* SceneDelegate.swift in Sources */,
 				3A9EE9552BC6254E00056653 /* LoginVC.swift in Sources */,
+				3CB250F22BCE2D2500B03949 /* BillDetailTVC.swift in Sources */,
 				3A18491E2BA4BAD70009EE9A /* UploadImageVC.swift in Sources */,
 				3A18492A2BA4C6830009EE9A /* HomeVC.swift in Sources */,
 				3A1849262BA4C56E0009EE9A /* Previous_Bills.swift in Sources */,
