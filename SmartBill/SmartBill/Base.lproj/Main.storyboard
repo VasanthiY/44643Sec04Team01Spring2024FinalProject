@@ -517,6 +517,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="addToCart:" destination="aHj-Vg-bzg" eventType="touchUpInside" id="k9O-AD-C3f"/>
                                             <action selector="logout:" destination="aVx-0o-3RQ" eventType="touchUpInside" id="uym-a9-Hp5"/>
                                         </connections>
                                     </button>
@@ -539,6 +540,10 @@
                     <navigationItem key="navigationItem" id="Dp7-kE-7fO">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="person.fill" catalog="system" id="mkd-7s-7IH"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="img" destination="vWV-Ut-X92" id="iIN-cc-W8o"/>
+                        <outlet property="itemLBL" destination="6bU-wF-92q" id="TWC-bd-EfO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kqa-sc-Swy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

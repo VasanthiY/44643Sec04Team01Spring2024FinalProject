@@ -13,6 +13,16 @@ class UploadImageVC: UIViewController {
     var detectedObjects = [String]()
     var matchedObjects = [String:Int]()
     
+    @IBOutlet weak var img: UIImageView!
+    
+    @IBOutlet weak var itemLBL: UILabel!
+    
+    @IBAction func addToCart(_ sender: UIButton) {
+        matchObjects()
+        performSegue(withIdentifier: "showBillDetails", sender: self)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,7 +46,7 @@ class UploadImageVC: UIViewController {
             AudioServicesPlaySystemSound(1109)
             img.image = selImg
         }
-        
+        performObjectDetection(img.image!)
         picker.dismiss(animated: true, completion: nil)
     }
     
@@ -55,49 +65,43 @@ class UploadImageVC: UIViewController {
     func performObjectDetection(_ image: UIImage) {
         
         guard let ciImage = CIImage(image: image) else {
-                    fatalError("Unable to create CIImage from UIImage")
-                }
-        
-        
-        
+            fatalError("Unable to create CIImage from UIImage")
+        }
         do {
             // Perform the text-recognition request.
             let imgHandler = VNImageRequestHandler(ciImage: ciImage)
 
             let request = VNRecognizeTextRequest { (request, error) in
-                        guard let observations = request.results as? [VNRecognizedTextObservation] else { return }
+                guard let observations = request.results as? [VNRecognizedTextObservation] else { return }
 
-                        for currentObservation in observations {
-                            /// The 1 in topCandidates(1) indicates that we only want one candidate.
-                            /// After that we take our one and only candidate with the most confidence out of the array.
-                            let topCandidate = currentObservation.topCandidates(1).first
+                for currentObservation in observations {
+                    /// The 1 in topCandidates(1) indicates that we only want one candidate.
+                    /// After that we take our one and only candidate with the most confidence out of the array.
+                    let topCandidate = currentObservation.topCandidates(1).first
 
-                            //print(topCandidate?.string)
-                            self.detectedObjects.append(topCandidate!.string)
-                        }
-                    }
-            
-                    request.recognitionLanguages = ["en"]
-                    request.recognitionLevel = .accurate
-                    request.usesLanguageCorrection = true
+                    //print(topCandidate?.string)
+                    self.detectedObjects.append(topCandidate!.string)
+                }
+            }
+
+            request.recognitionLanguages = ["en"]
+            request.recognitionLevel = .accurate
+            request.usesLanguageCorrection = true
 
             try imgHandler.perform([request])
         } catch {
             print("Unable to perform the requests: \(error).")
         }
-        
     }
     
     
     func matchObjects(){
         let productsindb = FireStoreOperations.productnames
-        
         let specialchars = "-"
-        
         for detectedObject in detectedObjects {
             let obj = detectedObject.lowercased().replacing(specialchars, with: "")
-            print("cleared:\(obj)")
             if(productsindb.contains(obj)){
+                
                 matchedObjects[obj, default: 0] += 1
             }
         }
