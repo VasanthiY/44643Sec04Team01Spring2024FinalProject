@@ -7,17 +7,11 @@
 
 import UIKit
 
-class BillGen: UIViewController {
+class HomeVC: UIViewController {
 
-    @IBOutlet weak var BillBTN: UIButton!
     
-    @IBOutlet weak var titleLBL: UILabel!
-    
-    
-    @IBOutlet weak var prevBillBTN: UIButton!
-    
-    
-    
+
+    @IBOutlet weak var welcomeLBL: UILabel!
     
     
     override func viewDidLoad() {
@@ -27,14 +21,6 @@ class BillGen: UIViewController {
         BillBTN.isEnabled = true
         prevBillBTN.isEnabled = true
         
-    }
-    
-   
-    @IBAction func prevBillBTN(_ sender: UIButton) {
-    }
-    
-    
-    @IBAction func BillGenBTN(_ sender: UIButton) {
     }
 
     /*
