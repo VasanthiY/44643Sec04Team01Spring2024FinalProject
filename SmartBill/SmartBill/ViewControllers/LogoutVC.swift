@@ -7,26 +7,32 @@
 
 import UIKit
 
-class logoutVCViewController: UIViewController {
+class LogoutVC: UIViewController {
 
     
     @IBOutlet weak var emailId: UITextField!
     @IBOutlet weak var fullName: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
 
     @IBAction func logout(_ sender: Any) {
+        self.showAlert()
     }
     
-    func showAlert(str: String) -> Void {
+    private func showAlert() {
+        let alert = UIAlertController(title: "Logout", message: "Would you like to logout?", preferredStyle: UIAlertController.Style.alert)
         
+        let okAction = UIAlertAction(title: "Confirm", style: .default) {(action) in
+            Task {
+                try AuthenticationManager.shared.signOut()
+                self.performSegue(withIdentifier: "backToLogin", sender: self)
+            }
+        }
         
-        let alert = UIAlertController(title: "Are you sure to exit", message: str, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: nil))
+        alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
     }
 
