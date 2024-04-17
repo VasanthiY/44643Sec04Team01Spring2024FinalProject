@@ -7,32 +7,30 @@
 
 import UIKit
 
-struct billDetail{
-    let name:String
-    let qty:Int
-    let total:Double
-}
-
 class BillDetailTVC: UITableViewController {
     
-    var bills = [String:Int]()
-    var billDetails:[billDetail] = []
     var billamount = 0
     var itemNames: [String] = []
+    var amounts: [String] = []
+    
+    @IBOutlet weak var generateBillBTN: UIBarButtonItem!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let prodprices = FireStoreOperations.productprices
-        for bill in bills {
-            let amount = Int(Double(bill.value) * prodprices[bill.key]!)
-            billamount += amount
-            itemNames.append(bill.key)
-            billDetails.append(billDetail(name: bill.key, qty: bill.value, total: Double(amount)))
+        if FireStoreOperations.cartItems.isEmpty {
+            generateBillBTN.isHidden = true
         }
         
-        print(billamount)
-        print(itemNames)
+        let prodprices = FireStoreOperations.productprices
+        for bill in FireStoreOperations.cartItems {
+            let amount = Int(Double(bill.value) * prodprices[bill.key]!)
+            
+            billamount += amount
+            itemNames.append(bill.key)
+            amounts.append(String(amount))
+        }
     }
 
     // MARK: - Table view data source
@@ -42,18 +40,16 @@ class BillDetailTVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return bills.count
+        return FireStoreOperations.cartItems.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Bill", for: indexPath) as! BillDetailCell
-        
-        let bill = billDetails[indexPath.row]
-        
-        cell.nameLBL.text = bill.name
-        cell.quantityLBL.text = String(bill.qty)
-        cell.priceLBL.text = String(bill.total)
+
+        cell.nameLBL.text = self.itemNames[indexPath.row]
+        cell.quantityLBL.text = String(FireStoreOperations.cartItems[self.itemNames[indexPath.row]]!)
+        cell.priceLBL.text = self.amounts[indexPath.row]
         
         return cell
     }
@@ -75,13 +71,13 @@ class BillDetailTVC: UITableViewController {
                 
         let ok = UIAlertAction(title: "ok", style: .default, handler: {_ in
             let data = [
-            
                 "items": self.itemNames.joined(separator: ", "),
                 "totalcost":self.billamount
             ]
             
             FireStoreOperations.saveBill(data: data)
-            self.billDetails = []
+            FireStoreOperations.cartItems.removeAll()
+            self.generateBillBTN.isHidden = true
             self.tableView.reloadData()
             
             self.present(thanksAlert, animated: true, completion: nil)

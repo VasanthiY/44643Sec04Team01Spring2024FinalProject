@@ -27,6 +27,7 @@ struct FireStoreOperations {
     static var billsinfo:[Bill] = []
     static var emailId: String = ""
     static var userName: String = ""
+    static var cartItems:[String:Int] = [:]
 
     public static func fetchUserName() async {
         let userCollection = db.collection("userinfo")
@@ -91,7 +92,6 @@ struct FireStoreOperations {
     }
     
     public static func saveBill(data:[String : Any]){
-        
         db.collection("bills").addDocument(data: data){ error in
             if let error = error {
                 print("Error saving data: \(error.localizedDescription)")
@@ -100,7 +100,6 @@ struct FireStoreOperations {
             }
         }
     }
-    
     
     public static func fetchBills() async{
         let billcollection = db.collection("bills")

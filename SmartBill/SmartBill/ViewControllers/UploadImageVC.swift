@@ -13,7 +13,6 @@ import Vision
 class UploadImageVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     var detectedObjects = [String]()
-    var matchedObjects = [String:Int]()
     
     @IBOutlet weak var img: UIImageView!
     
@@ -43,13 +42,13 @@ class UploadImageVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         
         img.isUserInteractionEnabled = true
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "showBillDetails" || segue.identifier == "showCartItems"){
-            let destinationVC = segue.destination as! BillDetailTVC
-            destinationVC.bills = matchedObjects
-        }
-    }
+//    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if(segue.identifier == "showBillDetails" || segue.identifier == "showCartItems"){
+//            let destinationVC = segue.destination as! BillDetailTVC
+//            destinationVC.bills = matchedObjects
+//        }
+//    }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let selImg = info[.editedImage] as? UIImage {
@@ -73,7 +72,7 @@ class UploadImageVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         addToCartBTN.isUserInteractionEnabled = false
         addToCartBTN.backgroundColor = UIColor.gray
         
-        if !matchedObjects.isEmpty {
+        if !FireStoreOperations.cartItems.isEmpty {
             viewCartBTN.isHidden = false
         }
     }
@@ -130,7 +129,7 @@ class UploadImageVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         for detectedObject in detectedObjects {
             let obj = detectedObject.lowercased().replacing(specialchars, with: "")
             if(productsindb.contains(obj)){
-                matchedObjects[obj, default: 0] += 1
+                FireStoreOperations.cartItems[obj, default: 0] += 1
                 self.itemLBL.text = obj
             }
         }
