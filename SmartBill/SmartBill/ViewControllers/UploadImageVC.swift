@@ -19,14 +19,22 @@ class UploadImageVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     @IBOutlet weak var itemLBL: UILabel!
     
+    @IBOutlet weak var addToCartBTN: UIButton!
+    
+    @IBOutlet weak var viewCartBTN: UIBarButtonItem!
+    
     @IBAction func addToCart(_ sender: UIButton) {
-        matchObjects()
         performSegue(withIdentifier: "showBillDetails", sender: self)
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        addToCartBTN.isEnabled = false
+        addToCartBTN.isUserInteractionEnabled = false
+        addToCartBTN.backgroundColor = UIColor.gray
+        
+        viewCartBTN.isHidden = true
 
         // Do any additional setup after loading the view.
         let doubleTapGesture = UITapGestureRecognizer(target: self, action: #selector(doubleTapGesture(_:)))
@@ -37,7 +45,7 @@ class UploadImageVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "showBillDetails"){
+        if(segue.identifier == "showBillDetails" || segue.identifier == "showCartItems"){
             let destinationVC = segue.destination as! BillDetailTVC
             destinationVC.bills = matchedObjects
         }
@@ -48,8 +56,26 @@ class UploadImageVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             AudioServicesPlaySystemSound(1109)
             img.image = selImg
         }
+        self.detectedObjects = []
         performObjectDetection(img.image!)
+        matchObjects()
+        
         picker.dismiss(animated: true, completion: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.img.image = UIImage(named: "uploadimagepic")
+        self.itemLBL.text = ""
+        
+        addToCartBTN.isEnabled = false
+        addToCartBTN.isUserInteractionEnabled = false
+        addToCartBTN.backgroundColor = UIColor.gray
+        
+        if !matchedObjects.isEmpty {
+            viewCartBTN.isHidden = false
+        }
     }
     
     @objc func doubleTapGesture(_ gesture: UITapGestureRecognizer) {
@@ -65,7 +91,6 @@ class UploadImageVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     
     func performObjectDetection(_ image: UIImage) {
-        
         guard let ciImage = CIImage(image: image) else {
             fatalError("Unable to create CIImage from UIImage")
         }
@@ -80,12 +105,14 @@ class UploadImageVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
                     /// The 1 in topCandidates(1) indicates that we only want one candidate.
                     /// After that we take our one and only candidate with the most confidence out of the array.
                     let topCandidate = currentObservation.topCandidates(1).first
-
-                    //print(topCandidate?.string)
                     self.detectedObjects.append(topCandidate!.string)
                 }
-            }
 
+                self.addToCartBTN.isEnabled = true
+                self.addToCartBTN.isUserInteractionEnabled = true
+                self.addToCartBTN.backgroundColor = UIColor.systemBlue
+            }
+            
             request.recognitionLanguages = ["en"]
             request.recognitionLevel = .accurate
             request.usesLanguageCorrection = true
@@ -103,8 +130,8 @@ class UploadImageVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         for detectedObject in detectedObjects {
             let obj = detectedObject.lowercased().replacing(specialchars, with: "")
             if(productsindb.contains(obj)){
-                
                 matchedObjects[obj, default: 0] += 1
+                self.itemLBL.text = obj
             }
         }
     }

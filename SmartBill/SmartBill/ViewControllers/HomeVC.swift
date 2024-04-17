@@ -10,15 +10,12 @@ import UIKit
 class HomeVC: UIViewController {
 
     @IBOutlet weak var welcomeLBL: UILabel!
-    
-    var emailId: String!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        emailId = "test@gmail.com"
         Task {
-            let userName = await FireStoreOperations.fetchUserName(emailId: emailId)
-            welcomeLBL.text = "Welcome \(userName)"
+            await FireStoreOperations.fetchUserName()
+            welcomeLBL.text = "Welcome \(FireStoreOperations.userName)"
         }
     }
 

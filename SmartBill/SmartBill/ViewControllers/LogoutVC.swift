@@ -15,6 +15,9 @@ class LogoutVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        fullName.text = FireStoreOperations.userName
+        emailId.text = FireStoreOperations.emailId
     }
     
 

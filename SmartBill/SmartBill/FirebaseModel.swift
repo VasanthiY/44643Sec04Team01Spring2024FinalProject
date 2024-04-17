@@ -25,14 +25,15 @@ struct FireStoreOperations {
     static var productnames: [String] = []
     static var productprices:[String:Double] = [:]
     static var billsinfo:[Bill] = []
+    static var emailId: String = ""
+    static var userName: String = ""
 
-    public static func fetchUserName(emailId: String) async -> String {
+    public static func fetchUserName() async {
         let userCollection = db.collection("userinfo")
         do{
             let userDocuments = try await userCollection.getDocuments().documents
             
             for user in userDocuments{
-                print(user)
                 if user.exists {
                     let userData = user.data()
                     
@@ -40,14 +41,13 @@ struct FireStoreOperations {
                     let name = userData["username"] as? String ?? "N/A"
                     
                     if email == emailId {
-                        return name
+                        userName = name
                     }
                 }
             }
         } catch {
             print("Error getting document: \(error)")
         }
-        return "nil"
     }
     
     public static func fetchProducts() async{
