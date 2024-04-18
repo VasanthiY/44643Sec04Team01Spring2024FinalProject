@@ -109,6 +109,10 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
         Task {
             do {
                 try await AuthenticationManager.shared.createUser(email: email.text!, password: password.text!)
+                
+                let userData:[String: Any] = ["email": email.text!, "username": name.text!]
+                FireStoreOperations.saveUserName(data: userData)
+                
                 performSegue(withIdentifier: "CreateToLoginSegue", sender: self)
             } catch {
                 return

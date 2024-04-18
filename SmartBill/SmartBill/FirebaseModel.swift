@@ -51,6 +51,16 @@ struct FireStoreOperations {
         }
     }
     
+    public static func saveUserName(data:[String : Any]){
+        db.collection("userinfo").addDocument(data: data){ error in
+            if let error = error {
+                print("Error saving data: \(error.localizedDescription)")
+            } else {
+                print("Data saved successfully.")
+            }
+        }
+    }
+    
     public static func fetchProducts() async{
         
         let productcollection = db.collection("products")
