@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class LoginVC: UIViewController {
     
@@ -15,14 +16,21 @@ class LoginVC: UIViewController {
     
     var isPasswordVisible = false
     
+    let continueSound: SystemSoundID = 1109
+    let eyeSound: SystemSoundID = 1105
+    let errorSound: SystemSoundID = 1152
+    
     @IBAction func onClickContinue(_ sender: Any) {
+        
         if emailAddress.text!.isEmpty {
             self.displayAlert(message: "Please enter valid email address!")
+            AudioServicesPlaySystemSound(errorSound)
             return
         }
         
         if pwd.text!.isEmpty {
             self.displayAlert(message: "Please enter valid password!")
+            AudioServicesPlaySystemSound(errorSound)
             return
         }
         
@@ -30,6 +38,7 @@ class LoginVC: UIViewController {
             do {
                 try await AuthenticationManager.shared.signIn(email: emailAddress.text!, password: pwd.text!)
                 FireStoreOperations.emailId = emailAddress.text!
+                AudioServicesPlaySystemSound(continueSound)
                 performSegue(withIdentifier: "successLogin", sender: self)
             } catch {
                 self.displayAlert(message: "Invalid Login Credentials! Please try again.")
@@ -39,6 +48,7 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func onClickEye(_ sender: UIButton) {
+        AudioServicesPlaySystemSound(eyeSound)
         isPasswordVisible.toggle()
         self.pwd.isSecureTextEntry = !isPasswordVisible
         updateButtonImage()

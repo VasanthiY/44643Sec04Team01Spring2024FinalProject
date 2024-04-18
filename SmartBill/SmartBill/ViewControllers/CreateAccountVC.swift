@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class CreateAccountVC: UIViewController, UITextFieldDelegate {
     
@@ -22,7 +23,9 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var messageLBL: UILabel!
     
-    
+    let continueSound: SystemSoundID = 1104
+    let errorSound: SystemSoundID = 1152
+    let eyeSound: SystemSoundID = 1105
     
     var isPasswordVisible = false
     
@@ -71,26 +74,31 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
     private func validateTheForm() {
         if name.text!.isEmpty {
             self.displayAlert(message: "Please enter valid name!")
+            AudioServicesPlaySystemSound(errorSound)
             return
         }
         
         if email.text!.isEmpty {
             self.displayAlert(message: "Please enter valid email address!")
+            AudioServicesPlaySystemSound(errorSound)
             return
         }
         
         if password.text!.isEmpty {
             self.displayAlert(message: "Please enter valid password!")
+            AudioServicesPlaySystemSound(errorSound)
             return
         }
         
         if(password.text!.count < 4 || password.text!.count > 20 ) {
             self.displayAlert(message: "Password length shoud be 4 to 20!")
+            AudioServicesPlaySystemSound(errorSound)
             return
         }
         
         if !password.text!.contains(where: { $0.isUppercase }) {
             self.displayAlert(message: "Password should contain at least one uppercase letter.")
+            AudioServicesPlaySystemSound(errorSound)
             return
         }
         
@@ -98,11 +106,13 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
 
         if !isSplCharacter {
             self.displayAlert(message: "Password should contain at least one special character among !@#$%&*.")
+            AudioServicesPlaySystemSound(errorSound)
             return
         }
         
         if confirmPass.text!.isEmpty {
             self.displayAlert(message: "Both the passwords should match!")
+            AudioServicesPlaySystemSound(errorSound)
             return
         }
         
@@ -112,7 +122,7 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
                 
                 let userData:[String: Any] = ["email": email.text!, "username": name.text!]
                 FireStoreOperations.saveUserName(data: userData)
-                
+                AudioServicesPlaySystemSound(continueSound)
                 performSegue(withIdentifier: "CreateToLoginSegue", sender: self)
             } catch {
                 return
@@ -131,6 +141,7 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func onClickEye(_ sender: Any) {
+        AudioServicesPlaySystemSound(eyeSound)
         isPasswordVisible.toggle()
         self.password.isSecureTextEntry = !isPasswordVisible
         updateButtonImage()

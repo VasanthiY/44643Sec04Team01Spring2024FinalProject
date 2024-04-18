@@ -6,8 +6,12 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ResetVC: UIViewController {
+    
+    let continueSound: SystemSoundID = 1109
+    let errorSound: SystemSoundID = 1152
     
     @IBOutlet weak var emailAddress: UITextField!
     
@@ -18,12 +22,14 @@ class ResetVC: UIViewController {
     @IBAction func onClickSendLink(_ sender: Any) {
         if let email = emailAddress.text, email.isEmpty {
             self.displayAlert(message: "Please enter valid email address!")
+            AudioServicesPlaySystemSound(errorSound)
             return
         }
         
         Task {
             do {
                 try await AuthenticationManager.shared.resetPassword(email: emailAddress.text!)
+                AudioServicesPlaySystemSound(continueSound)
                 performSegue(withIdentifier: "resetPasswordToLogin", sender: self)
             }
         }
