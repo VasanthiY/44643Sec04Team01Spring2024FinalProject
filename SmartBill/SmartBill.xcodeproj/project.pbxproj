@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		3A0868FE2BA3BFA000E1DB37 /* ButtonWithShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0868FD2BA3BFA000E1DB37 /* ButtonWithShadow.swift */; };
 		3A18491E2BA4BAD70009EE9A /* UploadImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18491D2BA4BAD70009EE9A /* UploadImageVC.swift */; };
-		3A1849222BA4BBD20009EE9A /* BillStatementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1849212BA4BBD20009EE9A /* BillStatementVC.swift */; };
-		3A1849282BA4C5F30009EE9A /* ProductDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1849272BA4C5F30009EE9A /* ProductDetails.swift */; };
 		3A18492A2BA4C6830009EE9A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1849292BA4C6830009EE9A /* HomeVC.swift */; };
 		3A657C1A2BC88E0F00211FF1 /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A657C192BC88E0F00211FF1 /* AuthenticationModel.swift */; };
 		3A657C1E2BC8984100211FF1 /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A657C1D2BC8984100211FF1 /* FirebaseModel.swift */; };
@@ -41,8 +39,6 @@
 /* Begin PBXFileReference section */
 		3A0868FD2BA3BFA000E1DB37 /* ButtonWithShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonWithShadow.swift; sourceTree = "<group>"; };
 		3A18491D2BA4BAD70009EE9A /* UploadImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageVC.swift; sourceTree = "<group>"; };
-		3A1849212BA4BBD20009EE9A /* BillStatementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillStatementVC.swift; sourceTree = "<group>"; };
-		3A1849272BA4C5F30009EE9A /* ProductDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetails.swift; sourceTree = "<group>"; };
 		3A1849292BA4C6830009EE9A /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		3A657C192BC88E0F00211FF1 /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
 		3A657C1D2BC8984100211FF1 /* FirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModel.swift; sourceTree = "<group>"; };
@@ -126,9 +122,7 @@
 				3AEF6C732BA0EE63009DD18A /* CreateAccountVC.swift */,
 				3AEF6C872BA0F0CB009DD18A /* LogoutVC.swift */,
 				3A18491D2BA4BAD70009EE9A /* UploadImageVC.swift */,
-				3A1849212BA4BBD20009EE9A /* BillStatementVC.swift */,
 				FC809CE12BCE2F32000B8E06 /* BillHistoryTVC.swift */,
-				3A1849272BA4C5F30009EE9A /* ProductDetails.swift */,
 				3A1849292BA4C6830009EE9A /* HomeVC.swift */,
 				3A9EE9542BC6254E00056653 /* LoginVC.swift */,
 				3A657C242BC8A0FC00211FF1 /* ResetVC.swift */,
@@ -252,8 +246,6 @@
 				3A657C1E2BC8984100211FF1 /* FirebaseModel.swift in Sources */,
 				3AD2D9092BD0846D00C12909 /* CartCell.swift in Sources */,
 				3A657C1A2BC88E0F00211FF1 /* AuthenticationModel.swift in Sources */,
-				3A1849222BA4BBD20009EE9A /* BillStatementVC.swift in Sources */,
-				3A1849282BA4C5F30009EE9A /* ProductDetails.swift in Sources */,
 				3A0868FE2BA3BFA000E1DB37 /* ButtonWithShadow.swift in Sources */,
 				3AEF6C862BA0F05E009DD18A /* DesignableView.swift in Sources */,
 				3AEF6C882BA0F0CB009DD18A /* LogoutVC.swift in Sources */,
