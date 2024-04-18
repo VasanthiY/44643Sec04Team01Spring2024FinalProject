@@ -10,6 +10,8 @@
 		3A0868FE2BA3BFA000E1DB37 /* ButtonWithShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0868FD2BA3BFA000E1DB37 /* ButtonWithShadow.swift */; };
 		3A18491E2BA4BAD70009EE9A /* UploadImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18491D2BA4BAD70009EE9A /* UploadImageVC.swift */; };
 		3A18492A2BA4C6830009EE9A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1849292BA4C6830009EE9A /* HomeVC.swift */; };
+		3A30B6D42BD1CEEF0097BE8F /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3A30B6D32BD1CEEF0097BE8F /* SDWebImage */; };
+		3A30B6D62BD1CEEF0097BE8F /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3A30B6D52BD1CEEF0097BE8F /* SDWebImageMapKit */; };
 		3A657C1A2BC88E0F00211FF1 /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A657C192BC88E0F00211FF1 /* AuthenticationModel.swift */; };
 		3A657C1E2BC8984100211FF1 /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A657C1D2BC8984100211FF1 /* FirebaseModel.swift */; };
 		3A657C252BC8A0FC00211FF1 /* ResetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A657C242BC8A0FC00211FF1 /* ResetVC.swift */; };
@@ -28,6 +30,7 @@
 		3AA58B7D2BCE280200E8E66A /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3AA58B7C2BCE280200E8E66A /* FirebaseDatabase */; };
 		3AA58B7F2BCE280200E8E66A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3AA58B7E2BCE280200E8E66A /* FirebaseFirestore */; };
 		3ABB24A62BD0972300BFB606 /* BillHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB24A52BD0972300BFB606 /* BillHistoryCell.swift */; };
+		3ABB24A82BD1C73500BFB606 /* AddProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB24A72BD1C73500BFB606 /* AddProductVC.swift */; };
 		3AD2D9092BD0846D00C12909 /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD2D9082BD0846D00C12909 /* CartCell.swift */; };
 		3AEF6C742BA0EE63009DD18A /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF6C732BA0EE63009DD18A /* CreateAccountVC.swift */; };
 		3AEF6C862BA0F05E009DD18A /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF6C852BA0F05E009DD18A /* DesignableView.swift */; };
@@ -40,6 +43,8 @@
 		3A0868FD2BA3BFA000E1DB37 /* ButtonWithShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonWithShadow.swift; sourceTree = "<group>"; };
 		3A18491D2BA4BAD70009EE9A /* UploadImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageVC.swift; sourceTree = "<group>"; };
 		3A1849292BA4C6830009EE9A /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		3A30B6D02BD1CDFC0097BE8F /* Vision.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Vision.playground; sourceTree = "<group>"; };
+		3A30B6D12BD1CDFC0097BE8F /* BackgroundAPI.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BackgroundAPI.playground; sourceTree = "<group>"; };
 		3A657C192BC88E0F00211FF1 /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
 		3A657C1D2BC8984100211FF1 /* FirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModel.swift; sourceTree = "<group>"; };
 		3A657C242BC8A0FC00211FF1 /* ResetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetVC.swift; sourceTree = "<group>"; };
@@ -56,6 +61,7 @@
 		3A9EE9542BC6254E00056653 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		3AA58B742BCE088100E8E66A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3ABB24A52BD0972300BFB606 /* BillHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillHistoryCell.swift; sourceTree = "<group>"; };
+		3ABB24A72BD1C73500BFB606 /* AddProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductVC.swift; sourceTree = "<group>"; };
 		3AD2D9082BD0846D00C12909 /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
 		3AEF6C732BA0EE63009DD18A /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		3AEF6C852BA0F05E009DD18A /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
@@ -73,6 +79,8 @@
 				3AA58B7F2BCE280200E8E66A /* FirebaseFirestore in Frameworks */,
 				3AA58B782BCE279900E8E66A /* Lottie in Frameworks */,
 				3AA58B7B2BCE280200E8E66A /* FirebaseAuth in Frameworks */,
+				3A30B6D62BD1CEEF0097BE8F /* SDWebImageMapKit in Frameworks */,
+				3A30B6D42BD1CEEF0097BE8F /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +106,8 @@
 		3A6ACDBB2B84507A00DEAB4C /* SmartBill */ = {
 			isa = PBXGroup;
 			children = (
+				3A30B6D12BD1CDFC0097BE8F /* BackgroundAPI.playground */,
+				3A30B6D02BD1CDFC0097BE8F /* Vision.playground */,
 				3AA58B742BCE088100E8E66A /* GoogleService-Info.plist */,
 				3AEF6C842BA0F026009DD18A /* Extension */,
 				3AEF6C812BA0EFC5009DD18A /* Others */,
@@ -128,6 +138,7 @@
 				3A657C242BC8A0FC00211FF1 /* ResetVC.swift */,
 				3A657C262BC8A19B00211FF1 /* BillVC.swift */,
 				3ABB24A52BD0972300BFB606 /* BillHistoryCell.swift */,
+				3ABB24A72BD1C73500BFB606 /* AddProductVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -171,6 +182,8 @@
 				3AA58B7A2BCE280200E8E66A /* FirebaseAuth */,
 				3AA58B7C2BCE280200E8E66A /* FirebaseDatabase */,
 				3AA58B7E2BCE280200E8E66A /* FirebaseFirestore */,
+				3A30B6D32BD1CEEF0097BE8F /* SDWebImage */,
+				3A30B6D52BD1CEEF0097BE8F /* SDWebImageMapKit */,
 			);
 			productName = SmartBill;
 			productReference = 3A6ACDB92B84507A00DEAB4C /* SmartBill.app */;
@@ -203,6 +216,7 @@
 			packageReferences = (
 				3AA58B762BCE279900E8E66A /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				3AA58B792BCE280200E8E66A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3A30B6D22BD1CEEF0097BE8F /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 3A6ACDBA2B84507A00DEAB4C /* Products */;
 			projectDirPath = "";
@@ -243,6 +257,7 @@
 				3CB250F22BCE2D2500B03949 /* CartTVC.swift in Sources */,
 				3A18491E2BA4BAD70009EE9A /* UploadImageVC.swift in Sources */,
 				3A18492A2BA4C6830009EE9A /* HomeVC.swift in Sources */,
+				3ABB24A82BD1C73500BFB606 /* AddProductVC.swift in Sources */,
 				3A657C1E2BC8984100211FF1 /* FirebaseModel.swift in Sources */,
 				3AD2D9092BD0846D00C12909 /* CartCell.swift in Sources */,
 				3A657C1A2BC88E0F00211FF1 /* AuthenticationModel.swift in Sources */,
@@ -473,6 +488,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3A30B6D22BD1CEEF0097BE8F /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.1;
+			};
+		};
 		3AA58B762BCE279900E8E66A /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "http://github.com/airbnb/lottie-ios.git";
@@ -492,6 +515,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3A30B6D32BD1CEEF0097BE8F /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A30B6D22BD1CEEF0097BE8F /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		3A30B6D52BD1CEEF0097BE8F /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A30B6D22BD1CEEF0097BE8F /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
 		3AA58B772BCE279900E8E66A /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3AA58B762BCE279900E8E66A /* XCRemoteSwiftPackageReference "lottie-ios" */;
