@@ -1,5 +1,5 @@
 //
-//  BillDetailCell.swift
+//  BillHistoryCell.swift
 //  SmartBill
 //
 //  Created by Krishna Vasanthi on 4/17/24.
@@ -7,13 +7,11 @@
 
 import UIKit
 
-class BillDetailCell: UITableViewCell {
+class BillHistoryCell: UITableViewCell {
+
+    @IBOutlet weak var items: UILabel!
     
-    @IBOutlet weak var nameLBL: UILabel!
-    
-    @IBOutlet weak var quantityLBL: UILabel!
-    
-    @IBOutlet weak var priceLBL: UILabel!
+    @IBOutlet weak var totalCost: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

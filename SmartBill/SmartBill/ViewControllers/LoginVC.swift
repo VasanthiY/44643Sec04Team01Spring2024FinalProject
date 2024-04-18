@@ -13,6 +13,8 @@ class LoginVC: UIViewController {
     @IBOutlet var pwd: UITextField!
     @IBOutlet var lockBTN: UIButton!
     
+    var isPasswordVisible = false
+    
     @IBAction func onClickContinue(_ sender: Any) {
         if emailAddress.text!.isEmpty {
             self.displayAlert(message: "Please enter valid email address!")
@@ -35,6 +37,13 @@ class LoginVC: UIViewController {
             }
         }
     }
+    
+    @IBAction func onClickEye(_ sender: UIButton) {
+        isPasswordVisible.toggle()
+        self.pwd.isSecureTextEntry = !isPasswordVisible
+        updateButtonImage()
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +57,12 @@ class LoginVC: UIViewController {
         let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
+    }
+    
+    func updateButtonImage() {
+        let imageName = !isPasswordVisible ? "eye.fill" : "eye.slash.fill"
+        let image = UIImage(systemName: imageName)
+        lockBTN.setImage(image, for: .normal)
     }
     
 

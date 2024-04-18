@@ -22,6 +22,10 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var messageLBL: UILabel!
     
+    
+    
+    var isPasswordVisible = false
+    
     let specialCharacters = CharacterSet(charactersIn: "!@#$%&*")
     
     override func viewDidLoad() {
@@ -38,6 +42,11 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
         validateTheForm()
     }
+    
+    @IBAction func onClickCancel(_ sender: UIButton) {
+        performSegue(withIdentifier: "CreateToLoginSegue", sender: self)
+    }
+    
     
     @IBAction func checkPassword(_ sender: UITextField) {
         if let checkPWD = confirmPass.text, !checkPWD.isEmpty {
@@ -117,11 +126,24 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
         return false
     }
     
+    @IBAction func onClickEye(_ sender: Any) {
+        isPasswordVisible.toggle()
+        self.password.isSecureTextEntry = !isPasswordVisible
+        updateButtonImage()
+    }
+    
+    
     private func displayAlert(message: String) {
         let alert = UIAlertController(title: "Invalid Entry", message: message, preferredStyle: .alert)
         
         let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
+    }
+    
+    func updateButtonImage() {
+        let imageName = !isPasswordVisible ? "eye.fill" : "eye.slash.fill"
+        let image = UIImage(systemName: imageName)
+        lockButton.setImage(image, for: .normal)
     }
 }

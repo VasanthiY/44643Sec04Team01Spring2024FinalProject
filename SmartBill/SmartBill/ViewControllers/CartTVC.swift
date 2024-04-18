@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BillDetailTVC: UITableViewController {
+class CartTVC: UITableViewController {
     
     var billamount = 0
     var itemNames: [String] = []
@@ -45,7 +45,7 @@ class BillDetailTVC: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Bill", for: indexPath) as! BillDetailCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Bill", for: indexPath) as! CartCell
 
         cell.nameLBL.text = self.itemNames[indexPath.row]
         cell.quantityLBL.text = String(FireStoreOperations.cartItems[self.itemNames[indexPath.row]]!)
@@ -54,10 +54,9 @@ class BillDetailTVC: UITableViewController {
         return cell
     }
     
-    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
            CGFloat(75)
-       }
+    }
     
     @IBAction func generateBill(_ sender: UIBarButtonItem) {
         let thanksAlert = UIAlertController(title: "Thank You", message: "Thanks for shopping with us!", preferredStyle: .alert)
