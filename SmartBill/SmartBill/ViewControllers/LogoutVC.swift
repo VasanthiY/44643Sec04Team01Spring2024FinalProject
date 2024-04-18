@@ -23,15 +23,19 @@ class LogoutVC: UIViewController {
 
     @IBAction func logout(_ sender: Any) {
         self.showAlert()
+        let systemSound: SystemSoundID = 1054
+        AudioServicesPlaySystemSound(systemSound)
     }
     
     private func showAlert() {
         let alert = UIAlertController(title: "Logout", message: "Would you like to logout?", preferredStyle: UIAlertController.Style.alert)
         
-        let okAction = UIAlertAction(title: "Confirm", style: .default) {(action) in
+        let okAction = UIAlertAction(title: "Confirm", style: .default) { [weak self] (action) in
+            let systemSound: SystemSoundID = 1005
+                    AudioServicesPlaySystemSound(systemSound)
             Task {
                 try AuthenticationManager.shared.signOut()
-                self.performSegue(withIdentifier: "backToLogin", sender: self)
+                self?.performSegue(withIdentifier: "backToLogin", sender: self)
             }
         }
         
