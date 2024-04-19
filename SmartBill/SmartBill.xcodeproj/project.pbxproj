@@ -36,6 +36,7 @@
 		3AEF6C862BA0F05E009DD18A /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF6C852BA0F05E009DD18A /* DesignableView.swift */; };
 		3AEF6C882BA0F0CB009DD18A /* LogoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF6C872BA0F0CB009DD18A /* LogoutVC.swift */; };
 		3CB250F22BCE2D2500B03949 /* CartTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB250F12BCE2D2500B03949 /* CartTVC.swift */; };
+		9A89DAE22BD2E805004BA8A3 /* ImageGeneratorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A89DAE12BD2E805004BA8A3 /* ImageGeneratorVC.swift */; };
 		FC809CE22BCE2F32000B8E06 /* BillHistoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC809CE12BCE2F32000B8E06 /* BillHistoryTVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		3AEF6C852BA0F05E009DD18A /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		3AEF6C872BA0F0CB009DD18A /* LogoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutVC.swift; sourceTree = "<group>"; };
 		3CB250F12BCE2D2500B03949 /* CartTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTVC.swift; sourceTree = "<group>"; };
+		9A89DAE12BD2E805004BA8A3 /* ImageGeneratorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGeneratorVC.swift; sourceTree = "<group>"; };
 		FC809CE12BCE2F32000B8E06 /* BillHistoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillHistoryTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +141,7 @@
 				3A657C262BC8A19B00211FF1 /* BillVC.swift */,
 				3ABB24A52BD0972300BFB606 /* BillHistoryCell.swift */,
 				3ABB24A72BD1C73500BFB606 /* AddProductVC.swift */,
+				9A89DAE12BD2E805004BA8A3 /* ImageGeneratorVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				3A657C272BC8A19B00211FF1 /* BillVC.swift in Sources */,
 				3A6ACDC12B84507A00DEAB4C /* ViewController.swift in Sources */,
 				3ABB24A62BD0972300BFB606 /* BillHistoryCell.swift in Sources */,
+				9A89DAE22BD2E805004BA8A3 /* ImageGeneratorVC.swift in Sources */,
 				3A6ACDBD2B84507A00DEAB4C /* AppDelegate.swift in Sources */,
 				3A6ACDBF2B84507A00DEAB4C /* SceneDelegate.swift in Sources */,
 				3A9EE9552BC6254E00056653 /* LoginVC.swift in Sources */,

@@ -37,4 +37,35 @@ class BillHistoryTVC: UITableViewController {
         
         return cell
     }
+    
+    
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let delete = UIContextualAction(style: .normal, title: "Delete the bill", handler: {
+            action, view, controller in
+            
+            let billitems = self.billitems[indexPath.row].items
+            self.billitems.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .none)
+            FireStoreOperations.deletebill(name: billitems)
+            
+        })
+        
+        
+        return UISwipeActionsConfiguration(actions: [delete])
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let update = UIContextualAction(style: .normal, title: "Increase the Bill price to 100", handler: {
+            action, view, controller in
+            
+            let billitems = self.billitems[indexPath.row].items
+            self.billitems.insert(Billitems(items: billitems, price: 100), at: indexPath.row)
+            tableView.reloadData()
+            FireStoreOperations.updatebill(name: billitems, price:100)
+            
+        })
+        
+        return UISwipeActionsConfiguration(actions: [update])
+    }
 }
