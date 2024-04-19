@@ -43,8 +43,8 @@ class BillHistoryTVC: UITableViewController {
         let delete = UIContextualAction(style: .normal, title: "Delete the bill", handler: {
             action, view, controller in
             
-            let billitems = self.billitems[indexPath.row].items
-            self.billitems.remove(at: indexPath.row)
+            let billitems = FireStoreOperations.billsinfo[indexPath.row].items
+            FireStoreOperations.billsinfo.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .none)
             FireStoreOperations.deletebill(name: billitems)
             
@@ -59,8 +59,8 @@ class BillHistoryTVC: UITableViewController {
         let update = UIContextualAction(style: .normal, title: "Increase the Bill price to 100", handler: {
             action, view, controller in
             
-            let billitems = self.billitems[indexPath.row].items
-            self.billitems.insert(Billitems(items: billitems, price: 100), at: indexPath.row)
+            let billitems = FireStoreOperations.billsinfo[indexPath.row].items
+            FireStoreOperations.billsinfo.insert(Bill(items: billitems, price: 100), at: indexPath.row)
             tableView.reloadData()
             FireStoreOperations.updatebill(name: billitems, price:100)
             

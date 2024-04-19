@@ -134,7 +134,6 @@ struct FireStoreOperations {
         }
     }
     
-    
     public static func deletebill(name:String){
         let collection = "bills"
         
@@ -142,62 +141,59 @@ struct FireStoreOperations {
         let val = name
         
         db.collection(collection).whereField(col, isEqualTo: val).getDocuments { (querySnapshot, error) in
-                if let error = error {
-                    print("Error getting documents: \(error.localizedDescription)")
-                    return
-                }
-                
-                guard let documents = querySnapshot?.documents else {
-                    print("No documents found.")
-                    return
-                }
-                
-                // Delete each document that matches the query result
-                for document in documents {
-                    db.collection(collection).document(document.documentID).delete { error in
-                        if let error = error {
-                            print("Error deleting document: \(error.localizedDescription)")
-                        } else {
-                            print("Document deleted successfully.")
-                        }
+            if let error = error {
+                print("Error getting documents: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let documents = querySnapshot?.documents else {
+                print("No documents found.")
+                return
+            }
+            
+            // Delete each document that matches the query result
+            for document in documents {
+                db.collection(collection).document(document.documentID).delete { error in
+                    if let error = error {
+                        print("Error deleting document: \(error.localizedDescription)")
+                    } else {
+                        print("Document deleted successfully.")
                     }
                 }
             }
-        
-
-
+        }
     }
     
     
     public static func updatebill(name:String, price:Double){
-            let fieldName = "items"
-            let fieldValue = name
-            let newFieldData: [String: Any] = [
-                "totalcost": 100
-            ]
+        let fieldName = "items"
+        let fieldValue = name
+        let newFieldData: [String: Any] = [
+            "totalcost": 100
+        ]
 
-            // Query for documents with the specified field value
-            db.collection("bills").whereField(fieldName, isEqualTo: fieldValue).getDocuments { (querySnapshot, error) in
-                if let error = error {
-                    print("Error getting documents: \(error.localizedDescription)")
-                    return
-                }
-                
-                guard let documents = querySnapshot?.documents else {
-                    print("No documents found.")
-                    return
-                }
-                
-                // Update each document that matches the query result
-                for document in documents {
-                    db.collection("bills").document(document.documentID).updateData(newFieldData) { error in
-                        if let error = error {
-                            print("Error updating document: \(error.localizedDescription)")
-                        } else {
-                            print("Document updated successfully.")
-                        }
+        // Query for documents with the specified field value
+        db.collection("bills").whereField(fieldName, isEqualTo: fieldValue).getDocuments { (querySnapshot, error) in
+            if let error = error {
+                print("Error getting documents: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let documents = querySnapshot?.documents else {
+                print("No documents found.")
+                return
+            }
+            
+            // Update each document that matches the query result
+            for document in documents {
+                db.collection("bills").document(document.documentID).updateData(newFieldData) { error in
+                    if let error = error {
+                        print("Error updating document: \(error.localizedDescription)")
+                    } else {
+                        print("Document updated successfully.")
                     }
                 }
             }
+        }
     }
 }
