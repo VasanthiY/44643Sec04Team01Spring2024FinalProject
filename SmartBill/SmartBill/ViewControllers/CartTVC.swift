@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import AVFoundation
 
 class CartTVC: UITableViewController {
     
     var billamount = 0
     var itemNames: [String] = []
     var amounts: [String] = []
+    let continueSound: SystemSoundID = 1109
     
     @IBOutlet weak var generateBillBTN: UIBarButtonItem!
     
@@ -59,6 +61,7 @@ class CartTVC: UITableViewController {
     }
     
     @IBAction func generateBill(_ sender: UIBarButtonItem) {
+        AudioServicesPlaySystemSound(continueSound)
         let thanksAlert = UIAlertController(title: "Thank You", message: "Thanks for shopping with us!", preferredStyle: .alert)
         
         let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
