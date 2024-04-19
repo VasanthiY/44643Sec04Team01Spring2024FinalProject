@@ -284,7 +284,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="onClickContinue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LOv-5c-UU9"/>
+                                                    <action selector="onClickBill:" destination="etQ-VG-Yqx" eventType="touchUpInside" id="6Vj-Yi-xpS"/>
                                                     <segue destination="aHj-Vg-bzg" kind="show" identifier="HomeToGenerateBill" id="voG-54-jZ9"/>
                                                 </connections>
                                             </button>
@@ -304,7 +304,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="onClickContinue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aUX-PU-hnD"/>
+                                                    <action selector="onClickPrevious:" destination="etQ-VG-Yqx" eventType="touchUpInside" id="aAY-dG-G1J"/>
                                                     <segue destination="06C-yp-GgU" kind="show" identifier="showPrevBills" id="8fQ-qs-BcF"/>
                                                 </connections>
                                             </button>
@@ -324,7 +324,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="onClickContinue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="45X-5a-6T1"/>
+                                                    <action selector="onClickAddProd:" destination="etQ-VG-Yqx" eventType="touchUpInside" id="ltH-Ak-nJG"/>
                                                     <segue destination="UFy-2a-ECb" kind="show" identifier="homeToAddProduct" id="5XI-2K-6DV"/>
                                                 </connections>
                                             </button>
@@ -1381,13 +1381,13 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tableCellBlueTextColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

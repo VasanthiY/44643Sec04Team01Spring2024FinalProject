@@ -6,11 +6,25 @@
 //
 
 import UIKit
+import AVFoundation
 
 class HomeVC: UIViewController {
+    let onClickSound: SystemSoundID = 1107
 
     @IBOutlet weak var welcomeLBL: UILabel!
-        
+    
+    @IBAction func onClickBill(_ sender: UIButton) {
+        AudioServicesPlaySystemSound(onClickSound)
+    }
+    
+    @IBAction func onClickAddProd(_ sender: UIButton) {
+        AudioServicesPlaySystemSound(onClickSound)
+    }
+    
+    @IBAction func onClickPrevious(_ sender: UIButton) {
+        AudioServicesPlaySystemSound(onClickSound)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         Task {
