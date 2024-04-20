@@ -23,13 +23,16 @@ class AddProductVC: UIViewController {
     @IBOutlet weak var negativePromptTF: UITextField!
     
     @IBAction func onClickAddProduct(_ sender: Any) {
+        
+//        https://s3.amazonaws.com/a.storyblok.com/f/191576/1024x1024/d25e1a99d7/sample-05.png
         let imageUrl = imageLinkTF.text!
         let positiveprompt = positivePromptTF.text!
         let negativeprompt = negativePromptTF.text!
         
         let headers = [
           "Accept": "image/png, application/json",
-          "x-api-key": "5944352c1eac584f54fde98effd80c40ea8e281f"
+          "x-api-key": "4e921dcd5f1a62ffa4c3847637b18fb7e8cb1cd7"
+          /*- This needs to be replaced for every 10 images as we are using trail period.*/
         ]
         
         let request = NSMutableURLRequest(url: NSURL(string: "https://image-api.photoroom.com/v2/edit?background.negativePrompt=\(negativeprompt)&background.prompt=\(positiveprompt)&imageUrl=\(imageUrl)")! as URL,
