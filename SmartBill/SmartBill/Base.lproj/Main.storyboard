@@ -884,7 +884,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7h5-h6-Rhf" userLabel="BigContainerSV">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7h5-h6-Rhf" userLabel="BigContainerSV">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="kKk-Xl-qN2">
@@ -894,7 +894,7 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tQu-VK-qK6">
-                                        <rect key="frame" x="0.0" y="266" width="393" height="223.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="266" width="393" height="578"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gN4-Je-hyA">
                                                 <rect key="frame" x="16" y="8" width="361" height="33.666666666666664"/>
@@ -903,7 +903,7 @@
                                                 <color key="textColor" systemColor="tableCellBlueTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="33G-et-iQg">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="33G-et-iQg">
                                                 <rect key="frame" x="16" y="49.666666666666686" width="361" height="50"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epg-b8-Lhp" customClass="DesignableView" customModule="SmartBill" customModuleProvider="target">
@@ -982,15 +982,16 @@
                                                     <action selector="onClickCancel:" destination="Jyl-xC-6JE" eventType="touchUpInside" id="0Gy-7J-hrR"/>
                                                 </connections>
                                             </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zd-CA-WVo">
+                                                <rect key="frame" x="16" y="223.66666666666671" width="361" height="346.33333333333326"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
                                         </subviews>
                                         <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
                                     </stackView>
-                                    <view contentMode="scaleToFill" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="Zag-nV-Ktj">
-                                        <rect key="frame" x="0.0" y="497.66666666666674" width="393" height="346.33333333333326"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
                                 </subviews>
                                 <edgeInsets key="layoutMargins" top="8" left="0.0" bottom="8" right="0.0"/>
+                                <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="o6K-Gs-9yR"/>
@@ -1356,7 +1357,7 @@
         <segue reference="Lr2-d1-jGn"/>
         <segue reference="fob-c3-DL4"/>
         <segue reference="e83-GN-f2n"/>
-        <segue reference="A99-CK-KBG"/>
+        <segue reference="fME-Mq-K5O"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="3135715" width="170.66667175292969" height="170.66667175292969"/>
