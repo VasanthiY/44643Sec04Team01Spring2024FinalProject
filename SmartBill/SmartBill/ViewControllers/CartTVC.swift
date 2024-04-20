@@ -81,7 +81,9 @@ class CartTVC: UITableViewController {
             FireStoreOperations.cartItems.removeAll()
             self.generateBillBTN.isHidden = true
             self.tableView.reloadData()
-            
+            Task{
+                await FireStoreOperations.fetchBills()
+            }
             self.present(thanksAlert, animated: true, completion: nil)
         })
         
