@@ -1023,124 +1023,134 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="O64-Iq-PSq" userLabel="BigContainerSV">
-                                <rect key="frame" x="10" y="10" width="373" height="480"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="O64-Iq-PSq" userLabel="BigContainerSV">
+                                <rect key="frame" x="10" y="10" width="373" height="475.66666666666669"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3135715" translatesAutoresizingMaskIntoConstraints="NO" id="cHK-k8-Ev9">
-                                        <rect key="frame" x="0.0" y="0.0" width="373" height="250"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="250" id="1DU-wj-6Sq"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K55-UR-tdT">
-                                        <rect key="frame" x="0.0" y="258" width="373" height="48"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gOe-7h-zPK">
-                                        <rect key="frame" x="0.0" y="314" width="373" height="108"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fp4-Ly-hqT">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="301.66666666666669"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQD-Zg-38f" customClass="DesignableView" customModule="SmartBill" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
-                                                <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ODg-Yf-0FB">
-                                                        <rect key="frame" x="1" y="0.0" width="372" height="50"/>
-                                                        <color key="tintColor" red="0.219127506" green="0.39460718630000002" blue="0.82454580070000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="50" id="AhS-9r-6Ob"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
-                                                    </textField>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <accessibility key="accessibilityConfiguration">
-                                                    <accessibilityTraits key="traits" notEnabled="YES"/>
-                                                </accessibility>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3135715" translatesAutoresizingMaskIntoConstraints="NO" id="cHK-k8-Ev9">
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="250"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="ODg-Yf-0FB" secondAttribute="trailing" id="3lZ-F3-zI4"/>
-                                                    <constraint firstItem="ODg-Yf-0FB" firstAttribute="leading" secondItem="gQD-Zg-38f" secondAttribute="leading" constant="1" id="79D-X0-ykA"/>
-                                                    <constraint firstItem="ODg-Yf-0FB" firstAttribute="top" secondItem="gQD-Zg-38f" secondAttribute="top" id="GVe-Fk-YOY"/>
-                                                    <constraint firstAttribute="bottom" secondItem="ODg-Yf-0FB" secondAttribute="bottom" id="NKf-8c-RF1"/>
+                                                    <constraint firstAttribute="height" constant="250" id="1DU-wj-6Sq"/>
                                                 </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K55-UR-tdT">
+                                                <rect key="frame" x="0.0" y="258" width="373" height="43.666666666666686"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="K55-UR-tdT" firstAttribute="height" secondItem="fp4-Ly-hqT" secondAttribute="height" multiplier="0.1" constant="13.399999999999999" id="EoB-Bv-FZK"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="49e-bl-eaT">
+                                        <rect key="frame" x="0.0" y="309.66666666666669" width="373" height="166"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gOe-7h-zPK">
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="108"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQD-Zg-38f" customClass="DesignableView" customModule="SmartBill" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ODg-Yf-0FB">
+                                                                <rect key="frame" x="1" y="0.0" width="372" height="50"/>
+                                                                <color key="tintColor" red="0.219127506" green="0.39460718630000002" blue="0.82454580070000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="AhS-9r-6Ob"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                            </textField>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                        </accessibility>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="ODg-Yf-0FB" secondAttribute="trailing" id="3lZ-F3-zI4"/>
+                                                            <constraint firstItem="ODg-Yf-0FB" firstAttribute="leading" secondItem="gQD-Zg-38f" secondAttribute="leading" constant="1" id="79D-X0-ykA"/>
+                                                            <constraint firstItem="ODg-Yf-0FB" firstAttribute="top" secondItem="gQD-Zg-38f" secondAttribute="top" id="GVe-Fk-YOY"/>
+                                                            <constraint firstAttribute="bottom" secondItem="ODg-Yf-0FB" secondAttribute="bottom" id="NKf-8c-RF1"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                                <real key="value" value="0.10000000000000001"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetY">
+                                                                <real key="value" value="-3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="knS-1q-8cN" customClass="DesignableView" customModule="SmartBill" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="58" width="373" height="50"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kun-cI-iXG">
+                                                                <rect key="frame" x="1" y="0.0" width="372" height="50"/>
+                                                                <color key="tintColor" red="0.219127506" green="0.39460718630000002" blue="0.82454580070000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="Y4U-HR-nzZ"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                            </textField>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="kun-cI-iXG" firstAttribute="top" secondItem="knS-1q-8cN" secondAttribute="top" id="1k3-A0-5jR"/>
+                                                            <constraint firstAttribute="bottom" secondItem="kun-cI-iXG" secondAttribute="bottom" id="LPR-yq-F66"/>
+                                                            <constraint firstItem="kun-cI-iXG" firstAttribute="leading" secondItem="knS-1q-8cN" secondAttribute="leading" constant="1" id="aA7-sD-UFZ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="kun-cI-iXG" secondAttribute="trailing" id="afD-vm-UMS"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                                <real key="value" value="0.10000000000000001"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetY">
+                                                                <real key="value" value="-3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7C-di-hOY" customClass="ButtonWithShadow" customModule="SmartBill" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="116" width="373" height="50"/>
+                                                <color key="backgroundColor" systemColor="tableCellBlueTextColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="kN1-cQ-8KN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="LogOut">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                        <real key="value" value="10"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                        <real key="value" value="0.10000000000000001"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetY">
-                                                        <real key="value" value="-3"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
-                                            </view>
-                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="knS-1q-8cN" customClass="DesignableView" customModule="SmartBill" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="58" width="373" height="50"/>
-                                                <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kun-cI-iXG">
-                                                        <rect key="frame" x="1" y="0.0" width="372" height="50"/>
-                                                        <color key="tintColor" red="0.219127506" green="0.39460718630000002" blue="0.82454580070000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="50" id="Y4U-HR-nzZ"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
-                                                    </textField>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstItem="kun-cI-iXG" firstAttribute="top" secondItem="knS-1q-8cN" secondAttribute="top" id="1k3-A0-5jR"/>
-                                                    <constraint firstAttribute="bottom" secondItem="kun-cI-iXG" secondAttribute="bottom" id="LPR-yq-F66"/>
-                                                    <constraint firstItem="kun-cI-iXG" firstAttribute="leading" secondItem="knS-1q-8cN" secondAttribute="leading" constant="1" id="aA7-sD-UFZ"/>
-                                                    <constraint firstAttribute="trailing" secondItem="kun-cI-iXG" secondAttribute="trailing" id="afD-vm-UMS"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                        <real key="value" value="10"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                        <real key="value" value="0.10000000000000001"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetY">
-                                                        <real key="value" value="-3"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
+                                                <connections>
+                                                    <action selector="logout:" destination="aVx-0o-3RQ" eventType="touchUpInside" id="Fdb-VI-YeY"/>
+                                                    <segue destination="BYZ-38-t0r" kind="show" identifier="backToLogin" id="JUv-Cq-tW9"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7C-di-hOY" customClass="ButtonWithShadow" customModule="SmartBill" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="430" width="373" height="50"/>
-                                        <color key="backgroundColor" systemColor="tableCellBlueTextColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="kN1-cQ-8KN"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="LogOut">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <integer key="value" value="25"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="logout:" destination="aVx-0o-3RQ" eventType="touchUpInside" id="Fdb-VI-YeY"/>
-                                            <segue destination="BYZ-38-t0r" kind="show" identifier="backToLogin" id="JUv-Cq-tW9"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="K55-UR-tdT" firstAttribute="height" secondItem="O64-Iq-PSq" secondAttribute="height" multiplier="0.1" id="DYq-FD-SlX"/>
-                                    <constraint firstItem="cHK-k8-Ev9" firstAttribute="centerX" secondItem="O64-Iq-PSq" secondAttribute="centerX" id="gsL-yQ-w50"/>
-                                </constraints>
+                                <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t0L-U2-WT4"/>
@@ -1357,7 +1367,7 @@
         <segue reference="Lr2-d1-jGn"/>
         <segue reference="fob-c3-DL4"/>
         <segue reference="e83-GN-f2n"/>
-        <segue reference="fME-Mq-K5O"/>
+        <segue reference="JUv-Cq-tW9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="3135715" width="170.66667175292969" height="170.66667175292969"/>

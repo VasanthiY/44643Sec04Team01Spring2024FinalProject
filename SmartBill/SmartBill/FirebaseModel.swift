@@ -115,7 +115,7 @@ struct FireStoreOperations {
         let billcollection = db.collection("bills")
         do{
             let bills = try await billcollection.getDocuments().documents
-            
+            billsinfo.removeAll()
             for bill in bills{
                 if bill.exists {
                     let billData = bill.data()

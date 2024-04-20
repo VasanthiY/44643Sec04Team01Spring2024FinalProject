@@ -12,6 +12,9 @@ class BillHistoryTVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Task{
+            await FireStoreOperations.fetchBills()
+        }
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
